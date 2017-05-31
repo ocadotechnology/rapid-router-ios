@@ -173,24 +173,32 @@
 		19830EC71EDF417C00503B38 /* UnityClassRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19830C031EDF415F00503B38 /* UnityClassRegistration.cpp */; };
 		19830EC81EDF417C00503B38 /* UnityICallRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19830E4F1EDF417A00503B38 /* UnityICallRegistration.cpp */; };
 		19830EC91EDF417C00503B38 /* UnresolvedVirtualCallStubs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19830E501EDF417A00503B38 /* UnresolvedVirtualCallStubs.cpp */; };
-		19A862F01EDF446A00843E21 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862EF1EDF446A00843E21 /* MediaToolbox.framework */; };
-		19A862F21EDF447000843E21 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F11EDF447000843E21 /* CoreText.framework */; };
-		19A862F41EDF447600843E21 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F31EDF447600843E21 /* AudioToolbox.framework */; };
 		19A862F51EDF447D00843E21 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19830ECC1EDF43FC00503B38 /* AVFoundation.framework */; };
-		19A862F71EDF448500843E21 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F61EDF448500843E21 /* CFNetwork.framework */; };
-		19A862FD1EDF44A400843E21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F81EDF44A400843E21 /* CoreGraphics.framework */; };
-		19A862FE1EDF44A400843E21 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F91EDF44A400843E21 /* CoreLocation.framework */; };
 		19A862FF1EDF44A400843E21 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862FA1EDF44A400843E21 /* CoreMedia.framework */; };
-		19A863001EDF44A400843E21 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862FB1EDF44A400843E21 /* CoreMotion.framework */; };
-		19A863011EDF44A400843E21 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862FC1EDF44A400843E21 /* CoreVideo.framework */; };
 		19A863061EDF44DB00843E21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863021EDF44DB00843E21 /* Foundation.framework */; };
 		19A863071EDF44DB00843E21 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863031EDF44DB00843E21 /* MediaPlayer.framework */; };
 		19A863081EDF44DB00843E21 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863041EDF44DB00843E21 /* OpenAL.framework */; };
-		19A863091EDF44DB00843E21 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863051EDF44DB00843E21 /* OpenGLES.framework */; };
 		19A8630B1EDF44E100843E21 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630A1EDF44E100843E21 /* QuartzCore.framework */; };
 		19A8630D1EDF44E700843E21 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */; };
 		19A8630F1EDF44EE00843E21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630E1EDF44EE00843E21 /* UIKit.framework */; };
 		19A863111EDF44F300843E21 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863101EDF44F300843E21 /* Metal.framework */; };
+		19F6C7E91EDF4EBB0014EA49 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; };
+		19F6C7EA1EDF528D0014EA49 /* Blockly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */; };
+		19F6C7EB1EDF52DB0014EA49 /* Blockly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */; };
+		19F6C7EC1EDF52DB0014EA49 /* Blockly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19F6C7EE1EDF53050014EA49 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; };
+		19F6C7EF1EDF53050014EA49 /* AEXML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19F6C7FE1EDF53050014EA49 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863051EDF44DB00843E21 /* OpenGLES.framework */; };
+		19F6C8001EDF53050014EA49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F81EDF44A400843E21 /* CoreGraphics.framework */; };
+		19F6C8021EDF53050014EA49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F91EDF44A400843E21 /* CoreLocation.framework */; };
+		19F6C8061EDF53050014EA49 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862FB1EDF44A400843E21 /* CoreMotion.framework */; };
+		19F6C8081EDF53050014EA49 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862FC1EDF44A400843E21 /* CoreVideo.framework */; };
+		19F6C80A1EDF53050014EA49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F61EDF448500843E21 /* CFNetwork.framework */; };
+		19F6C80C1EDF53050014EA49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F31EDF447600843E21 /* AudioToolbox.framework */; };
+		19F6C80E1EDF53050014EA49 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862F11EDF447000843E21 /* CoreText.framework */; };
+		19F6C8101EDF53050014EA49 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A862EF1EDF446A00843E21 /* MediaToolbox.framework */; };
+		19F6C8181EDF53050014EA49 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196E23D31EB1E676009BE15D /* SnapKit.framework */; };
+		19F6C8191EDF53050014EA49 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 196E23D31EB1E676009BE15D /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D64C05B1EA7CB950037067E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C05A1EA7CB950037067E /* AppDelegate.swift */; };
 		7D64C05D1EA7CB950037067E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C05C1EA7CB950037067E /* ViewController.swift */; };
 		7D64C0601EA7CB950037067E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D64C05E1EA7CB950037067E /* Main.storyboard */; };
@@ -208,6 +216,22 @@
 			remoteInfo = "Rapid Router";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19F6C7ED1EDF52DB0014EA49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19F6C7EF1EDF53050014EA49 /* AEXML.framework in Embed Frameworks */,
+				19F6C8191EDF53050014EA49 /* SnapKit.framework in Embed Frameworks */,
+				19F6C7EC1EDF52DB0014EA49 /* Blockly.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		190F1E261EA7D5FD00257624 /* PLCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReporter.h; sourceTree = "<group>"; };
@@ -448,6 +472,8 @@
 		19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		19A8630E1EDF44EE00843E21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19A863101EDF44F300843E21 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Blockly.framework; path = Carthage/Build/iOS/Blockly.framework; sourceTree = "<group>"; };
+		19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
 		7D64C0571EA7CB950037067E /* Rapid Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapid Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D64C05A1EA7CB950037067E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D64C05C1EA7CB950037067E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -465,24 +491,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F6C7EA1EDF528D0014EA49 /* Blockly.framework in Frameworks */,
+				19F6C7E91EDF4EBB0014EA49 /* AEXML.framework in Frameworks */,
 				19A863111EDF44F300843E21 /* Metal.framework in Frameworks */,
 				19A8630F1EDF44EE00843E21 /* UIKit.framework in Frameworks */,
 				19A8630D1EDF44E700843E21 /* SystemConfiguration.framework in Frameworks */,
+				19F6C80C1EDF53050014EA49 /* AudioToolbox.framework in Frameworks */,
 				19A8630B1EDF44E100843E21 /* QuartzCore.framework in Frameworks */,
 				19A863061EDF44DB00843E21 /* Foundation.framework in Frameworks */,
+				19F6C8181EDF53050014EA49 /* SnapKit.framework in Frameworks */,
 				19A863071EDF44DB00843E21 /* MediaPlayer.framework in Frameworks */,
+				19F6C8001EDF53050014EA49 /* CoreGraphics.framework in Frameworks */,
 				19A863081EDF44DB00843E21 /* OpenAL.framework in Frameworks */,
-				19A863091EDF44DB00843E21 /* OpenGLES.framework in Frameworks */,
-				19A862FD1EDF44A400843E21 /* CoreGraphics.framework in Frameworks */,
-				19A862FE1EDF44A400843E21 /* CoreLocation.framework in Frameworks */,
+				19F6C80E1EDF53050014EA49 /* CoreText.framework in Frameworks */,
+				19F6C80A1EDF53050014EA49 /* CFNetwork.framework in Frameworks */,
+				19F6C8021EDF53050014EA49 /* CoreLocation.framework in Frameworks */,
+				19F6C7FE1EDF53050014EA49 /* OpenGLES.framework in Frameworks */,
+				19F6C7EE1EDF53050014EA49 /* AEXML.framework in Frameworks */,
+				19F6C8081EDF53050014EA49 /* CoreVideo.framework in Frameworks */,
 				19A862FF1EDF44A400843E21 /* CoreMedia.framework in Frameworks */,
-				19A863001EDF44A400843E21 /* CoreMotion.framework in Frameworks */,
-				19A863011EDF44A400843E21 /* CoreVideo.framework in Frameworks */,
-				19A862F71EDF448500843E21 /* CFNetwork.framework in Frameworks */,
+				19F6C8061EDF53050014EA49 /* CoreMotion.framework in Frameworks */,
+				19F6C8101EDF53050014EA49 /* MediaToolbox.framework in Frameworks */,
 				19A862F51EDF447D00843E21 /* AVFoundation.framework in Frameworks */,
-				19A862F41EDF447600843E21 /* AudioToolbox.framework in Frameworks */,
-				19A862F21EDF447000843E21 /* CoreText.framework in Frameworks */,
-				19A862F01EDF446A00843E21 /* MediaToolbox.framework in Frameworks */,
+				19F6C7EB1EDF52DB0014EA49 /* Blockly.framework in Frameworks */,
 				190F20F31EA7F5D100257624 /* libiPhone-lib.a in Frameworks */,
 				196E23D41EB1E676009BE15D /* SnapKit.framework in Frameworks */,
 			);
@@ -608,6 +639,8 @@
 		190F20EF1EA7F53E00257624 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */,
+				19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */,
 				19A863101EDF44F300843E21 /* Metal.framework */,
 				19A8630E1EDF44EE00843E21 /* UIKit.framework */,
 				19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */,
@@ -862,6 +895,7 @@
 				7D64C0551EA7CB950037067E /* Resources */,
 				7D64C07C1EA7CC870037067E /* ShellScript */,
 				196E23D21EB1E4BD009BE15D /* ShellScript */,
+				19F6C7ED1EDF52DB0014EA49 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

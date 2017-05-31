@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         unityView!.snp.makeConstraints { make in
             make.edges.equalTo(gameView)
         }
+
     }
 
     @IBAction func stopUnity(sender: AnyObject) {
