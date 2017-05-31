@@ -37,20 +37,29 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-2v-W7a">
-                                <rect key="frame" x="40" y="40" width="1286" height="884"/>
+                                <rect key="frame" x="678" y="40" width="648" height="884"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84y-Fi-LbM">
+                                <rect key="frame" x="20" y="40" width="648" height="884"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="p7R-2v-W7a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="5qO-QN-qQq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="84y-Fi-LbM" secondAttribute="leading" id="5aa-Jr-1k6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p7R-2v-W7a" secondAttribute="bottom" constant="100" id="7XX-Rj-qzJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9EG-yp-o9q" secondAttribute="bottom" constant="50" id="9VZ-E3-lDl"/>
                             <constraint firstItem="x2T-6x-7k7" firstAttribute="top" secondItem="p7R-2v-W7a" secondAttribute="bottom" constant="20" id="E9Q-Mb-ag1"/>
+                            <constraint firstItem="p7R-2v-W7a" firstAttribute="leading" secondItem="84y-Fi-LbM" secondAttribute="trailing" constant="10" id="HcI-oF-Z5Y"/>
                             <constraint firstItem="x2T-6x-7k7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="333" id="ImJ-eY-xAt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p7R-2v-W7a" secondAttribute="trailing" constant="20" id="LWX-eA-Swq"/>
                             <constraint firstItem="9EG-yp-o9q" firstAttribute="leading" secondItem="x2T-6x-7k7" secondAttribute="trailing" constant="287" id="LlR-Qc-Xdh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9EG-yp-o9q" secondAttribute="trailing" constant="640" id="NoV-DC-1ea"/>
+                            <constraint firstItem="p7R-2v-W7a" firstAttribute="width" secondItem="84y-Fi-LbM" secondAttribute="width" id="Vae-gB-ImU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x2T-6x-7k7" secondAttribute="bottom" constant="50" id="avp-aZ-X3P"/>
                             <constraint firstItem="p7R-2v-W7a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="dXr-Ai-ovC"/>
+                            <constraint firstItem="84y-Fi-LbM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="kec-4J-Wgj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="84y-Fi-LbM" secondAttribute="bottom" constant="100" id="lXs-On-JMt"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,6 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="50.951683748169835" y="115.42968749999999"/>
         </scene>
     </scenes>
 </document>
