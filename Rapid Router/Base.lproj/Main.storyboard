@@ -67,6 +67,7 @@
                     </view>
                     <connections>
                         <outlet property="gameView" destination="p7R-2v-W7a" id="cbt-CN-Yc0"/>
+                        <outlet property="workbenchView" destination="84y-Fi-LbM" id="a3Q-Du-ykr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
