@@ -186,6 +186,7 @@
 		19A8630D1EDF44E700843E21 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */; };
 		19A8630F1EDF44EE00843E21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630E1EDF44EE00843E21 /* UIKit.framework */; };
 		19A863111EDF44F300843E21 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863101EDF44F300843E21 /* Metal.framework */; };
+		19D0E2551EE877DB0030314D /* LevelChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0E2541EE877DB0030314D /* LevelChooserViewController.swift */; };
 		19F6C7E91EDF4EBB0014EA49 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; };
 		19F6C7EE1EDF53050014EA49 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; };
 		19F6C7EF1EDF53050014EA49 /* AEXML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -475,6 +476,7 @@
 		19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		19A8630E1EDF44EE00843E21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19A863101EDF44F300843E21 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		19D0E2541EE877DB0030314D /* LevelChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelChooserViewController.swift; sourceTree = "<group>"; };
 		19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Blockly.framework; path = Carthage/Build/iOS/Blockly.framework; sourceTree = "<group>"; };
 		19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
 		7D64C0571EA7CB950037067E /* Rapid Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapid Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -865,6 +867,7 @@
 				7D64C0631EA7CB950037067E /* LaunchScreen.storyboard */,
 				7D64C0661EA7CB950037067E /* Info.plist */,
 				190F20EB1EA7DA8500257624 /* main.swift */,
+				19D0E2541EE877DB0030314D /* LevelChooserViewController.swift */,
 			);
 			path = "Rapid Router";
 			sourceTree = "<group>";
@@ -1128,6 +1131,7 @@
 				19830E741EDF417A00503B38 /* Bulk_mscorlib_6.cpp in Sources */,
 				19830EBA1EDF417A00503B38 /* Il2CppGenericClassTable.cpp in Sources */,
 				19830E671EDF417A00503B38 /* Bulk_Generics_6.cpp in Sources */,
+				19D0E2551EE877DB0030314D /* LevelChooserViewController.swift in Sources */,
 				19830E5E1EDF417A00503B38 /* Bulk_Generics_12.cpp in Sources */,
 				190F1F101EA7D60200257624 /* UnityReplayKit.mm in Sources */,
 				190F1F051EA7D60200257624 /* CVTextureCache.mm in Sources */,
