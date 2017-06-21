@@ -885,6 +885,7 @@
 				190FF3711EA7D42500257624 /* Classes */,
 			);
 			name = Unity;
+			path = "Rapid Router";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1351,7 +1352,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ocado.Rapid-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				UNITY_IOS_EXPORT_PATH = "$(PROJECT_DIR)/RapidRouterUnityBuild";
 				UNITY_RUNTIME_VERSION = 5.6.1f1;
 			};
 			name = Debug;
@@ -1378,7 +1378,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ocado.Rapid-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				UNITY_IOS_EXPORT_PATH = "$(PROJECT_DIR)/RapidRouterUnityBuild";
 				UNITY_RUNTIME_VERSION = 5.6.1f1;
 			};
 			name = Release;
