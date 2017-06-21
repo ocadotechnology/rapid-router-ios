@@ -6,7 +6,7 @@
 
 UNITY_RUNTIME_VERSION = 5.6.1f1;
 UNITY_SCRIPTING_BACKEND = il2cpp;
-UNITY_IOS_EXPORT_PATH = /Path/To/Your/Unity/iOS/Build;
+UNITY_IOS_EXPORT_PATH = $(PROJECT_DIR)/Rapid Router/RapidRouterUnityBuild;
 GCC_PREFIX_HEADER = $(UNITY_IOS_EXPORT_PATH)/Classes/Prefix.pch;
 
 OTHER_LDFLAGS = -weak-lSystem -weak_framework CoreMotion -weak_framework GameKit -weak_framework iAd -framework CoreGraphics -framework AVFoundation -framework CoreVideo -framework CoreMedia -framework SystemConfiguration -framework CoreLocation -framework MediaPlayer -framework CFNetwork -framework AudioToolbox -framework OpenAL -framework QuartzCore -framework OpenGLES -framework UIKit -framework Foundation -liconv.2 -liPhone-lib;
