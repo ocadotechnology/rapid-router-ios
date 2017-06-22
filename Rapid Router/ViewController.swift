@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var gameView: UIView!
 
     @IBOutlet weak var workbenchView: UIView!
+
+    let workBenchViewController = WorkbenchViewController(style: .defaultStyle)
     
     @IBAction func startUnity(sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -38,7 +40,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let workBenchViewController = WorkbenchViewController(style: .defaultStyle)
 
         let blockFactory = workBenchViewController.blockFactory
         do {
@@ -77,6 +78,13 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    @IBAction func sendBlocksToUnity(_ sender: Any) {
+        let blocks = workBenchViewController.workspace?.topLevelBlocks().map { $0.name }
+
+        if blocks!.count > 0 {
+            UnitySendMessage("VanController", "BlocklyListener", blocks![0])
+        }
     }
 }
 
