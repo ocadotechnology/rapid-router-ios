@@ -25,7 +25,7 @@ class LevelChooserViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let level = String(indexPath.row)
-        UnitySendMessage("LevelManager", "LevelChangeListener", level)
+        UnitySendMessage("ChapterController", "LevelChangeListener", level)
     }
 
 }

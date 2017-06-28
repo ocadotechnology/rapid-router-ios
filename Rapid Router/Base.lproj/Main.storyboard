@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rapid_Router" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Game" customClass="ViewController" customModule="Rapid_Router" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,37 +22,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0dv-fx-Ca3">
-                                <rect key="frame" x="66" y="944" width="636" height="48"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhq-tp-v20" customClass="NavigationBar" customModule="Rapid_Router" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                                <color key="backgroundColor" red="0.2901606559753418" green="0.29021644592285156" blue="0.29015710949897766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hpW-tc-dXJ"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.29016065600000002" green="0.29021644590000001" blue="0.29015710950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="md7-e1-CLx"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0dv-fx-Ca3" userLabel="Buttons">
+                                <rect key="frame" x="25.5" y="942" width="717" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-6x-7k7">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Start"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-6x-7k7">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="50"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.81960784313725488" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="startUnityWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxw-LF-Ass"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EG-yp-o9q">
-                                        <rect key="frame" x="114" y="0.0" width="62" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Stop"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EG-yp-o9q">
+                                        <rect key="frame" x="143" y="0.0" width="92" height="50"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.81960784310000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="stopUnityWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3e7-Ql-5lx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-D5-PMS">
-                                        <rect key="frame" x="226" y="0.0" width="180" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Send to Unity"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-D5-PMS">
+                                        <rect key="frame" x="285" y="0.0" width="191" height="50"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.81960784310000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="Send to Unity">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendBlocksToUnity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANm-75-b2r"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgC-al-FWt">
-                                        <rect key="frame" x="456" y="0.0" width="180" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Choose Level"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgC-al-FWt">
+                                        <rect key="frame" x="526" y="0.0" width="191" height="50"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.81960784310000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="Choose Level">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="zSa-gU-fkr" kind="popoverPresentation" popoverAnchorView="dgC-al-FWt" id="Xsl-C7-7qh">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -61,28 +112,33 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-2v-W7a">
-                                <rect key="frame" x="379" y="40" width="349" height="884"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84y-Fi-LbM">
-                                <rect key="frame" x="20" y="40" width="349" height="884"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I0q-US-07D" userLabel="Game Views">
+                                <rect key="frame" x="20" y="70" width="728" height="802"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84y-Fi-LbM">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="802"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-2v-W7a">
+                                        <rect key="frame" x="364" y="0.0" width="364" height="802"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="84y-Fi-LbM" secondAttribute="leading" id="5aa-Jr-1k6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p7R-2v-W7a" secondAttribute="bottom" constant="100" id="7XX-Rj-qzJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Uhq-tp-v20" secondAttribute="trailing" id="3P0-LA-5wg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I0q-US-07D" secondAttribute="trailing" id="3u4-g7-cYy"/>
+                            <constraint firstItem="I0q-US-07D" firstAttribute="top" secondItem="Uhq-tp-v20" secondAttribute="bottom" constant="20" id="4pW-vU-NjX"/>
+                            <constraint firstItem="Uhq-tp-v20" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5TO-f3-4gM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0dv-fx-Ca3" secondAttribute="bottom" constant="32" id="H2y-Nf-A8f"/>
-                            <constraint firstItem="p7R-2v-W7a" firstAttribute="leading" secondItem="84y-Fi-LbM" secondAttribute="trailing" constant="10" id="HcI-oF-Z5Y"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="p7R-2v-W7a" secondAttribute="trailing" constant="20" id="LWX-eA-Swq"/>
-                            <constraint firstItem="p7R-2v-W7a" firstAttribute="width" secondItem="84y-Fi-LbM" secondAttribute="width" id="Vae-gB-ImU"/>
                             <constraint firstItem="0dv-fx-Ca3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wda-gF-Nt3"/>
-                            <constraint firstItem="p7R-2v-W7a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="dXr-Ai-ovC"/>
-                            <constraint firstItem="84y-Fi-LbM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="kec-4J-Wgj"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="84y-Fi-LbM" secondAttribute="bottom" constant="100" id="lXs-On-JMt"/>
+                            <constraint firstItem="I0q-US-07D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hV3-ze-kLw"/>
+                            <constraint firstItem="0dv-fx-Ca3" firstAttribute="top" secondItem="I0q-US-07D" secondAttribute="bottom" constant="70" id="qWu-eh-htO"/>
+                            <constraint firstItem="Uhq-tp-v20" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u6M-fI-zRf"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="gameView" destination="p7R-2v-W7a" id="cbt-CN-Yc0"/>
                         <outlet property="workbenchView" destination="84y-Fi-LbM" id="a3Q-Du-ykr"/>
@@ -90,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.951683748169835" y="115.42968749999999"/>
+            <point key="canvasLocation" x="50.78125" y="115.42968749999999"/>
         </scene>
         <!--Level Chooser View Controller-->
         <scene sceneID="clS-V4-fe8">

@@ -86,5 +86,16 @@ class ViewController: UIViewController {
             UnitySendMessage("VanController", "BlocklyListener", blocks![0])
         }
     }
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    } 
+
+    func setStatusBarBackgroundColor(color: UIColor) {
+
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
+
+        statusBar.backgroundColor = color
+    }
 }
 
