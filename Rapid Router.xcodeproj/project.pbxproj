@@ -207,6 +207,7 @@
 		7D64C0621EA7CB950037067E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D64C0611EA7CB950037067E /* Assets.xcassets */; };
 		7D64C0651EA7CB950037067E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D64C0631EA7CB950037067E /* LaunchScreen.storyboard */; };
 		7D64C0701EA7CB950037067E /* Rapid_RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C06F1EA7CB950037067E /* Rapid_RouterTests.swift */; };
+		7DFE99921F041227003274B6 /* EndLevelPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE99911F041227003274B6 /* EndLevelPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -489,6 +490,7 @@
 		7D64C06B1EA7CB950037067E /* Rapid RouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rapid RouterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D64C06F1EA7CB950037067E /* Rapid_RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rapid_RouterTests.swift; sourceTree = "<group>"; };
 		7D64C0711EA7CB950037067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DFE99911F041227003274B6 /* EndLevelPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndLevelPopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -867,6 +869,7 @@
 				7D64C0631EA7CB950037067E /* LaunchScreen.storyboard */,
 				7D64C0661EA7CB950037067E /* Info.plist */,
 				190F20EB1EA7DA8500257624 /* main.swift */,
+				7DFE99911F041227003274B6 /* EndLevelPopUpViewController.swift */,
 				19D0E2541EE877DB0030314D /* LevelChooserViewController.swift */,
 			);
 			path = "Rapid Router";
@@ -1060,6 +1063,7 @@
 				19830EB01EDF417A00503B38 /* Il2CppCompilerCalculateTypeValues_36Table.cpp in Sources */,
 				190F1F141EA7D60200257624 /* UnityAdsUnityWrapper.mm in Sources */,
 				19830EB61EDF417A00503B38 /* Il2CppCompilerCalculateTypeValues_7Table.cpp in Sources */,
+				7DFE99921F041227003274B6 /* EndLevelPopUpViewController.swift in Sources */,
 				19830E601EDF417A00503B38 /* Bulk_Generics_14.cpp in Sources */,
 				19830E811EDF417A00503B38 /* Bulk_System.Xml_1.cpp in Sources */,
 				19830E5D1EDF417A00503B38 /* Bulk_Generics_11.cpp in Sources */,
