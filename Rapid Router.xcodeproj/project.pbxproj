@@ -188,6 +188,117 @@
 		19A8630D1EDF44E700843E21 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */; };
 		19A8630F1EDF44EE00843E21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A8630E1EDF44EE00843E21 /* UIKit.framework */; };
 		19A863111EDF44F300843E21 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A863101EDF44F300843E21 /* Metal.framework */; };
+		19BE64C41F1FEA78007CA856 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE64C31F1FEA78007CA856 /* AppState.swift */; };
+		19BE64C61F1FEB61007CA856 /* ChangeLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE64C51F1FEB61007CA856 /* ChangeLevel.swift */; };
+		19BE64C81F1FEBCE007CA856 /* LevelChangeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE64C71F1FEBCE007CA856 /* LevelChangeReducer.swift */; };
+		19BE65351F1FF2A1007CA856 /* 2Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64C91F1FF2A1007CA856 /* 2Toolbox.xml */; };
+		19BE65361F1FF2A1007CA856 /* 3Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64CA1F1FF2A1007CA856 /* 3Toolbox.xml */; };
+		19BE65371F1FF2A1007CA856 /* 4Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64CB1F1FF2A1007CA856 /* 4Toolbox.xml */; };
+		19BE65381F1FF2A1007CA856 /* 5Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64CC1F1FF2A1007CA856 /* 5Toolbox.xml */; };
+		19BE65391F1FF2A1007CA856 /* 6Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64CD1F1FF2A1007CA856 /* 6Toolbox.xml */; };
+		19BE653A1F1FF2A1007CA856 /* 7Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64CE1F1FF2A1007CA856 /* 7Toolbox.xml */; };
+		19BE653B1F1FF2A1007CA856 /* 8Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64CF1F1FF2A1007CA856 /* 8Toolbox.xml */; };
+		19BE653C1F1FF2A1007CA856 /* 9Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D01F1FF2A1007CA856 /* 9Toolbox.xml */; };
+		19BE653D1F1FF2A1007CA856 /* 10Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D11F1FF2A1007CA856 /* 10Toolbox.xml */; };
+		19BE653E1F1FF2A1007CA856 /* 11Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D21F1FF2A1007CA856 /* 11Toolbox.xml */; };
+		19BE653F1F1FF2A1007CA856 /* 12Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D31F1FF2A1007CA856 /* 12Toolbox.xml */; };
+		19BE65401F1FF2A1007CA856 /* 13Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D41F1FF2A1007CA856 /* 13Toolbox.xml */; };
+		19BE65411F1FF2A1007CA856 /* 14Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D51F1FF2A1007CA856 /* 14Toolbox.xml */; };
+		19BE65421F1FF2A1007CA856 /* 15Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D61F1FF2A1007CA856 /* 15Toolbox.xml */; };
+		19BE65431F1FF2A1007CA856 /* 16Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D71F1FF2A1007CA856 /* 16Toolbox.xml */; };
+		19BE65441F1FF2A1007CA856 /* 17Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D81F1FF2A1007CA856 /* 17Toolbox.xml */; };
+		19BE65451F1FF2A1007CA856 /* 18Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64D91F1FF2A1007CA856 /* 18Toolbox.xml */; };
+		19BE65461F1FF2A1007CA856 /* 19Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64DA1F1FF2A1007CA856 /* 19Toolbox.xml */; };
+		19BE65471F1FF2A1007CA856 /* 20Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64DB1F1FF2A1007CA856 /* 20Toolbox.xml */; };
+		19BE65481F1FF2A1007CA856 /* 21Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64DC1F1FF2A1007CA856 /* 21Toolbox.xml */; };
+		19BE65491F1FF2A1007CA856 /* 22Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64DD1F1FF2A1007CA856 /* 22Toolbox.xml */; };
+		19BE654A1F1FF2A1007CA856 /* 23Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64DE1F1FF2A1007CA856 /* 23Toolbox.xml */; };
+		19BE654B1F1FF2A1007CA856 /* 24Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64DF1F1FF2A1007CA856 /* 24Toolbox.xml */; };
+		19BE654C1F1FF2A1007CA856 /* 25Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E01F1FF2A1007CA856 /* 25Toolbox.xml */; };
+		19BE654D1F1FF2A1007CA856 /* 26Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E11F1FF2A1007CA856 /* 26Toolbox.xml */; };
+		19BE654E1F1FF2A1007CA856 /* 27Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E21F1FF2A1007CA856 /* 27Toolbox.xml */; };
+		19BE654F1F1FF2A1007CA856 /* 28Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E31F1FF2A1007CA856 /* 28Toolbox.xml */; };
+		19BE65501F1FF2A1007CA856 /* 29Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E41F1FF2A1007CA856 /* 29Toolbox.xml */; };
+		19BE65511F1FF2A1007CA856 /* 30Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E51F1FF2A1007CA856 /* 30Toolbox.xml */; };
+		19BE65521F1FF2A1007CA856 /* 31Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E61F1FF2A1007CA856 /* 31Toolbox.xml */; };
+		19BE65531F1FF2A1007CA856 /* 32Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E71F1FF2A1007CA856 /* 32Toolbox.xml */; };
+		19BE65541F1FF2A1007CA856 /* 33Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E81F1FF2A1007CA856 /* 33Toolbox.xml */; };
+		19BE65551F1FF2A1007CA856 /* 34Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64E91F1FF2A1007CA856 /* 34Toolbox.xml */; };
+		19BE65561F1FF2A1007CA856 /* 35Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64EA1F1FF2A1007CA856 /* 35Toolbox.xml */; };
+		19BE65571F1FF2A1007CA856 /* 36Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64EB1F1FF2A1007CA856 /* 36Toolbox.xml */; };
+		19BE65581F1FF2A1007CA856 /* 37Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64EC1F1FF2A1007CA856 /* 37Toolbox.xml */; };
+		19BE65591F1FF2A1007CA856 /* 38Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64ED1F1FF2A1007CA856 /* 38Toolbox.xml */; };
+		19BE655A1F1FF2A1007CA856 /* 39Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64EE1F1FF2A1007CA856 /* 39Toolbox.xml */; };
+		19BE655B1F1FF2A1007CA856 /* 40Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64EF1F1FF2A1007CA856 /* 40Toolbox.xml */; };
+		19BE655C1F1FF2A1007CA856 /* 41Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F01F1FF2A1007CA856 /* 41Toolbox.xml */; };
+		19BE655D1F1FF2A1007CA856 /* 42Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F11F1FF2A1007CA856 /* 42Toolbox.xml */; };
+		19BE655E1F1FF2A1007CA856 /* 43Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F21F1FF2A1007CA856 /* 43Toolbox.xml */; };
+		19BE655F1F1FF2A1007CA856 /* 44Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F31F1FF2A1007CA856 /* 44Toolbox.xml */; };
+		19BE65601F1FF2A1007CA856 /* 45Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F41F1FF2A1007CA856 /* 45Toolbox.xml */; };
+		19BE65611F1FF2A1007CA856 /* 46Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F51F1FF2A1007CA856 /* 46Toolbox.xml */; };
+		19BE65621F1FF2A1007CA856 /* 47Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F61F1FF2A1007CA856 /* 47Toolbox.xml */; };
+		19BE65631F1FF2A1007CA856 /* 48Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F71F1FF2A1007CA856 /* 48Toolbox.xml */; };
+		19BE65641F1FF2A1007CA856 /* 49Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F81F1FF2A1007CA856 /* 49Toolbox.xml */; };
+		19BE65651F1FF2A1007CA856 /* 50Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64F91F1FF2A1007CA856 /* 50Toolbox.xml */; };
+		19BE65661F1FF2A1007CA856 /* 51Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64FA1F1FF2A1007CA856 /* 51Toolbox.xml */; };
+		19BE65671F1FF2A1007CA856 /* 52Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64FB1F1FF2A1007CA856 /* 52Toolbox.xml */; };
+		19BE65681F1FF2A1007CA856 /* 53Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64FC1F1FF2A1007CA856 /* 53Toolbox.xml */; };
+		19BE65691F1FF2A1007CA856 /* 54Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64FD1F1FF2A1007CA856 /* 54Toolbox.xml */; };
+		19BE656A1F1FF2A1007CA856 /* 55Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64FE1F1FF2A1007CA856 /* 55Toolbox.xml */; };
+		19BE656B1F1FF2A1007CA856 /* 56Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE64FF1F1FF2A1007CA856 /* 56Toolbox.xml */; };
+		19BE656C1F1FF2A1007CA856 /* 57Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65001F1FF2A1007CA856 /* 57Toolbox.xml */; };
+		19BE656D1F1FF2A1007CA856 /* 58Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65011F1FF2A1007CA856 /* 58Toolbox.xml */; };
+		19BE656E1F1FF2A1007CA856 /* 59Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65021F1FF2A1007CA856 /* 59Toolbox.xml */; };
+		19BE656F1F1FF2A1007CA856 /* 60Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65031F1FF2A1007CA856 /* 60Toolbox.xml */; };
+		19BE65701F1FF2A1007CA856 /* 61Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65041F1FF2A1007CA856 /* 61Toolbox.xml */; };
+		19BE65711F1FF2A1007CA856 /* 62Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65051F1FF2A1007CA856 /* 62Toolbox.xml */; };
+		19BE65721F1FF2A1007CA856 /* 63Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65061F1FF2A1007CA856 /* 63Toolbox.xml */; };
+		19BE65731F1FF2A1007CA856 /* 64Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65071F1FF2A1007CA856 /* 64Toolbox.xml */; };
+		19BE65741F1FF2A1007CA856 /* 65Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65081F1FF2A1007CA856 /* 65Toolbox.xml */; };
+		19BE65751F1FF2A1007CA856 /* 66Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65091F1FF2A1007CA856 /* 66Toolbox.xml */; };
+		19BE65761F1FF2A1007CA856 /* 67Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE650A1F1FF2A1007CA856 /* 67Toolbox.xml */; };
+		19BE65771F1FF2A1007CA856 /* 68Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE650B1F1FF2A1007CA856 /* 68Toolbox.xml */; };
+		19BE65781F1FF2A1007CA856 /* 69Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE650C1F1FF2A1007CA856 /* 69Toolbox.xml */; };
+		19BE65791F1FF2A1007CA856 /* 70Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE650D1F1FF2A1007CA856 /* 70Toolbox.xml */; };
+		19BE657A1F1FF2A1007CA856 /* 71Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE650E1F1FF2A1007CA856 /* 71Toolbox.xml */; };
+		19BE657B1F1FF2A1007CA856 /* 72Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE650F1F1FF2A1007CA856 /* 72Toolbox.xml */; };
+		19BE657C1F1FF2A1007CA856 /* 73Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65101F1FF2A1007CA856 /* 73Toolbox.xml */; };
+		19BE657D1F1FF2A1007CA856 /* 74Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65111F1FF2A1007CA856 /* 74Toolbox.xml */; };
+		19BE657E1F1FF2A1007CA856 /* 75Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65121F1FF2A1007CA856 /* 75Toolbox.xml */; };
+		19BE657F1F1FF2A1007CA856 /* 76Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65131F1FF2A1007CA856 /* 76Toolbox.xml */; };
+		19BE65801F1FF2A1007CA856 /* 77Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65141F1FF2A1007CA856 /* 77Toolbox.xml */; };
+		19BE65811F1FF2A1007CA856 /* 78Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65151F1FF2A1007CA856 /* 78Toolbox.xml */; };
+		19BE65821F1FF2A1007CA856 /* 79Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65161F1FF2A1007CA856 /* 79Toolbox.xml */; };
+		19BE65831F1FF2A1007CA856 /* 80Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65171F1FF2A1007CA856 /* 80Toolbox.xml */; };
+		19BE65841F1FF2A1007CA856 /* 81Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65181F1FF2A1007CA856 /* 81Toolbox.xml */; };
+		19BE65851F1FF2A1007CA856 /* 82Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65191F1FF2A1007CA856 /* 82Toolbox.xml */; };
+		19BE65861F1FF2A1007CA856 /* 83Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE651A1F1FF2A1007CA856 /* 83Toolbox.xml */; };
+		19BE65871F1FF2A1007CA856 /* 84Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE651B1F1FF2A1007CA856 /* 84Toolbox.xml */; };
+		19BE65881F1FF2A1007CA856 /* 85Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE651C1F1FF2A1007CA856 /* 85Toolbox.xml */; };
+		19BE65891F1FF2A1007CA856 /* 86Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE651D1F1FF2A1007CA856 /* 86Toolbox.xml */; };
+		19BE658A1F1FF2A1007CA856 /* 87Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE651E1F1FF2A1007CA856 /* 87Toolbox.xml */; };
+		19BE658B1F1FF2A1007CA856 /* 88Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE651F1F1FF2A1007CA856 /* 88Toolbox.xml */; };
+		19BE658C1F1FF2A1007CA856 /* 89Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65201F1FF2A1007CA856 /* 89Toolbox.xml */; };
+		19BE658D1F1FF2A1007CA856 /* 90Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65211F1FF2A1007CA856 /* 90Toolbox.xml */; };
+		19BE658E1F1FF2A1007CA856 /* 91Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65221F1FF2A1007CA856 /* 91Toolbox.xml */; };
+		19BE658F1F1FF2A1007CA856 /* 92Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65231F1FF2A1007CA856 /* 92Toolbox.xml */; };
+		19BE65901F1FF2A1007CA856 /* 93Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65241F1FF2A1007CA856 /* 93Toolbox.xml */; };
+		19BE65911F1FF2A1007CA856 /* 94Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65251F1FF2A1007CA856 /* 94Toolbox.xml */; };
+		19BE65921F1FF2A1007CA856 /* 95Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65261F1FF2A1007CA856 /* 95Toolbox.xml */; };
+		19BE65931F1FF2A1007CA856 /* 96Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65271F1FF2A1007CA856 /* 96Toolbox.xml */; };
+		19BE65941F1FF2A1007CA856 /* 97Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65281F1FF2A1007CA856 /* 97Toolbox.xml */; };
+		19BE65951F1FF2A1007CA856 /* 98Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65291F1FF2A1007CA856 /* 98Toolbox.xml */; };
+		19BE65961F1FF2A1007CA856 /* 99Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE652A1F1FF2A1007CA856 /* 99Toolbox.xml */; };
+		19BE65971F1FF2A1007CA856 /* 100Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE652B1F1FF2A1007CA856 /* 100Toolbox.xml */; };
+		19BE65981F1FF2A1007CA856 /* 101Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE652C1F1FF2A1007CA856 /* 101Toolbox.xml */; };
+		19BE65991F1FF2A1007CA856 /* 102Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE652D1F1FF2A1007CA856 /* 102Toolbox.xml */; };
+		19BE659A1F1FF2A1007CA856 /* 103Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE652E1F1FF2A1007CA856 /* 103Toolbox.xml */; };
+		19BE659B1F1FF2A1007CA856 /* 104Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE652F1F1FF2A1007CA856 /* 104Toolbox.xml */; };
+		19BE659C1F1FF2A1007CA856 /* 105Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65301F1FF2A1007CA856 /* 105Toolbox.xml */; };
+		19BE659D1F1FF2A1007CA856 /* 106Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65311F1FF2A1007CA856 /* 106Toolbox.xml */; };
+		19BE659E1F1FF2A1007CA856 /* 107Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65321F1FF2A1007CA856 /* 107Toolbox.xml */; };
+		19BE659F1F1FF2A1007CA856 /* 108Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65331F1FF2A1007CA856 /* 108Toolbox.xml */; };
+		19BE65A01F1FF2A1007CA856 /* 109Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19BE65341F1FF2A1007CA856 /* 109Toolbox.xml */; };
 		19D0E2551EE877DB0030314D /* LevelChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0E2541EE877DB0030314D /* LevelChooserViewController.swift */; };
 		19F6C7E91EDF4EBB0014EA49 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; };
 		19F6C7EE1EDF53050014EA49 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */; };
@@ -486,6 +597,117 @@
 		19A8630C1EDF44E700843E21 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		19A8630E1EDF44EE00843E21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19A863101EDF44F300843E21 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		19BE64C31F1FEA78007CA856 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		19BE64C51F1FEB61007CA856 /* ChangeLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLevel.swift; sourceTree = "<group>"; };
+		19BE64C71F1FEBCE007CA856 /* LevelChangeReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelChangeReducer.swift; sourceTree = "<group>"; };
+		19BE64C91F1FF2A1007CA856 /* 2Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2Toolbox.xml; sourceTree = "<group>"; };
+		19BE64CA1F1FF2A1007CA856 /* 3Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 3Toolbox.xml; sourceTree = "<group>"; };
+		19BE64CB1F1FF2A1007CA856 /* 4Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 4Toolbox.xml; sourceTree = "<group>"; };
+		19BE64CC1F1FF2A1007CA856 /* 5Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 5Toolbox.xml; sourceTree = "<group>"; };
+		19BE64CD1F1FF2A1007CA856 /* 6Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 6Toolbox.xml; sourceTree = "<group>"; };
+		19BE64CE1F1FF2A1007CA856 /* 7Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 7Toolbox.xml; sourceTree = "<group>"; };
+		19BE64CF1F1FF2A1007CA856 /* 8Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 8Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D01F1FF2A1007CA856 /* 9Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 9Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D11F1FF2A1007CA856 /* 10Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 10Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D21F1FF2A1007CA856 /* 11Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 11Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D31F1FF2A1007CA856 /* 12Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 12Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D41F1FF2A1007CA856 /* 13Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 13Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D51F1FF2A1007CA856 /* 14Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 14Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D61F1FF2A1007CA856 /* 15Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 15Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D71F1FF2A1007CA856 /* 16Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 16Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D81F1FF2A1007CA856 /* 17Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 17Toolbox.xml; sourceTree = "<group>"; };
+		19BE64D91F1FF2A1007CA856 /* 18Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 18Toolbox.xml; sourceTree = "<group>"; };
+		19BE64DA1F1FF2A1007CA856 /* 19Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 19Toolbox.xml; sourceTree = "<group>"; };
+		19BE64DB1F1FF2A1007CA856 /* 20Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 20Toolbox.xml; sourceTree = "<group>"; };
+		19BE64DC1F1FF2A1007CA856 /* 21Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 21Toolbox.xml; sourceTree = "<group>"; };
+		19BE64DD1F1FF2A1007CA856 /* 22Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 22Toolbox.xml; sourceTree = "<group>"; };
+		19BE64DE1F1FF2A1007CA856 /* 23Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 23Toolbox.xml; sourceTree = "<group>"; };
+		19BE64DF1F1FF2A1007CA856 /* 24Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E01F1FF2A1007CA856 /* 25Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 25Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E11F1FF2A1007CA856 /* 26Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 26Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E21F1FF2A1007CA856 /* 27Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 27Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E31F1FF2A1007CA856 /* 28Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 28Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E41F1FF2A1007CA856 /* 29Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 29Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E51F1FF2A1007CA856 /* 30Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 30Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E61F1FF2A1007CA856 /* 31Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 31Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E71F1FF2A1007CA856 /* 32Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E81F1FF2A1007CA856 /* 33Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 33Toolbox.xml; sourceTree = "<group>"; };
+		19BE64E91F1FF2A1007CA856 /* 34Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 34Toolbox.xml; sourceTree = "<group>"; };
+		19BE64EA1F1FF2A1007CA856 /* 35Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 35Toolbox.xml; sourceTree = "<group>"; };
+		19BE64EB1F1FF2A1007CA856 /* 36Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 36Toolbox.xml; sourceTree = "<group>"; };
+		19BE64EC1F1FF2A1007CA856 /* 37Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 37Toolbox.xml; sourceTree = "<group>"; };
+		19BE64ED1F1FF2A1007CA856 /* 38Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 38Toolbox.xml; sourceTree = "<group>"; };
+		19BE64EE1F1FF2A1007CA856 /* 39Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 39Toolbox.xml; sourceTree = "<group>"; };
+		19BE64EF1F1FF2A1007CA856 /* 40Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 40Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F01F1FF2A1007CA856 /* 41Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 41Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F11F1FF2A1007CA856 /* 42Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 42Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F21F1FF2A1007CA856 /* 43Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 43Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F31F1FF2A1007CA856 /* 44Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 44Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F41F1FF2A1007CA856 /* 45Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 45Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F51F1FF2A1007CA856 /* 46Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 46Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F61F1FF2A1007CA856 /* 47Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 47Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F71F1FF2A1007CA856 /* 48Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 48Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F81F1FF2A1007CA856 /* 49Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 49Toolbox.xml; sourceTree = "<group>"; };
+		19BE64F91F1FF2A1007CA856 /* 50Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 50Toolbox.xml; sourceTree = "<group>"; };
+		19BE64FA1F1FF2A1007CA856 /* 51Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 51Toolbox.xml; sourceTree = "<group>"; };
+		19BE64FB1F1FF2A1007CA856 /* 52Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 52Toolbox.xml; sourceTree = "<group>"; };
+		19BE64FC1F1FF2A1007CA856 /* 53Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 53Toolbox.xml; sourceTree = "<group>"; };
+		19BE64FD1F1FF2A1007CA856 /* 54Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 54Toolbox.xml; sourceTree = "<group>"; };
+		19BE64FE1F1FF2A1007CA856 /* 55Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 55Toolbox.xml; sourceTree = "<group>"; };
+		19BE64FF1F1FF2A1007CA856 /* 56Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 56Toolbox.xml; sourceTree = "<group>"; };
+		19BE65001F1FF2A1007CA856 /* 57Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 57Toolbox.xml; sourceTree = "<group>"; };
+		19BE65011F1FF2A1007CA856 /* 58Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 58Toolbox.xml; sourceTree = "<group>"; };
+		19BE65021F1FF2A1007CA856 /* 59Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 59Toolbox.xml; sourceTree = "<group>"; };
+		19BE65031F1FF2A1007CA856 /* 60Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 60Toolbox.xml; sourceTree = "<group>"; };
+		19BE65041F1FF2A1007CA856 /* 61Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 61Toolbox.xml; sourceTree = "<group>"; };
+		19BE65051F1FF2A1007CA856 /* 62Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 62Toolbox.xml; sourceTree = "<group>"; };
+		19BE65061F1FF2A1007CA856 /* 63Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 63Toolbox.xml; sourceTree = "<group>"; };
+		19BE65071F1FF2A1007CA856 /* 64Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 64Toolbox.xml; sourceTree = "<group>"; };
+		19BE65081F1FF2A1007CA856 /* 65Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 65Toolbox.xml; sourceTree = "<group>"; };
+		19BE65091F1FF2A1007CA856 /* 66Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 66Toolbox.xml; sourceTree = "<group>"; };
+		19BE650A1F1FF2A1007CA856 /* 67Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 67Toolbox.xml; sourceTree = "<group>"; };
+		19BE650B1F1FF2A1007CA856 /* 68Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 68Toolbox.xml; sourceTree = "<group>"; };
+		19BE650C1F1FF2A1007CA856 /* 69Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 69Toolbox.xml; sourceTree = "<group>"; };
+		19BE650D1F1FF2A1007CA856 /* 70Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 70Toolbox.xml; sourceTree = "<group>"; };
+		19BE650E1F1FF2A1007CA856 /* 71Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 71Toolbox.xml; sourceTree = "<group>"; };
+		19BE650F1F1FF2A1007CA856 /* 72Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 72Toolbox.xml; sourceTree = "<group>"; };
+		19BE65101F1FF2A1007CA856 /* 73Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 73Toolbox.xml; sourceTree = "<group>"; };
+		19BE65111F1FF2A1007CA856 /* 74Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 74Toolbox.xml; sourceTree = "<group>"; };
+		19BE65121F1FF2A1007CA856 /* 75Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 75Toolbox.xml; sourceTree = "<group>"; };
+		19BE65131F1FF2A1007CA856 /* 76Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 76Toolbox.xml; sourceTree = "<group>"; };
+		19BE65141F1FF2A1007CA856 /* 77Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 77Toolbox.xml; sourceTree = "<group>"; };
+		19BE65151F1FF2A1007CA856 /* 78Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 78Toolbox.xml; sourceTree = "<group>"; };
+		19BE65161F1FF2A1007CA856 /* 79Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 79Toolbox.xml; sourceTree = "<group>"; };
+		19BE65171F1FF2A1007CA856 /* 80Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 80Toolbox.xml; sourceTree = "<group>"; };
+		19BE65181F1FF2A1007CA856 /* 81Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 81Toolbox.xml; sourceTree = "<group>"; };
+		19BE65191F1FF2A1007CA856 /* 82Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 82Toolbox.xml; sourceTree = "<group>"; };
+		19BE651A1F1FF2A1007CA856 /* 83Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 83Toolbox.xml; sourceTree = "<group>"; };
+		19BE651B1F1FF2A1007CA856 /* 84Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 84Toolbox.xml; sourceTree = "<group>"; };
+		19BE651C1F1FF2A1007CA856 /* 85Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 85Toolbox.xml; sourceTree = "<group>"; };
+		19BE651D1F1FF2A1007CA856 /* 86Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 86Toolbox.xml; sourceTree = "<group>"; };
+		19BE651E1F1FF2A1007CA856 /* 87Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 87Toolbox.xml; sourceTree = "<group>"; };
+		19BE651F1F1FF2A1007CA856 /* 88Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 88Toolbox.xml; sourceTree = "<group>"; };
+		19BE65201F1FF2A1007CA856 /* 89Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 89Toolbox.xml; sourceTree = "<group>"; };
+		19BE65211F1FF2A1007CA856 /* 90Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 90Toolbox.xml; sourceTree = "<group>"; };
+		19BE65221F1FF2A1007CA856 /* 91Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 91Toolbox.xml; sourceTree = "<group>"; };
+		19BE65231F1FF2A1007CA856 /* 92Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 92Toolbox.xml; sourceTree = "<group>"; };
+		19BE65241F1FF2A1007CA856 /* 93Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 93Toolbox.xml; sourceTree = "<group>"; };
+		19BE65251F1FF2A1007CA856 /* 94Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 94Toolbox.xml; sourceTree = "<group>"; };
+		19BE65261F1FF2A1007CA856 /* 95Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 95Toolbox.xml; sourceTree = "<group>"; };
+		19BE65271F1FF2A1007CA856 /* 96Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 96Toolbox.xml; sourceTree = "<group>"; };
+		19BE65281F1FF2A1007CA856 /* 97Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 97Toolbox.xml; sourceTree = "<group>"; };
+		19BE65291F1FF2A1007CA856 /* 98Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 98Toolbox.xml; sourceTree = "<group>"; };
+		19BE652A1F1FF2A1007CA856 /* 99Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 99Toolbox.xml; sourceTree = "<group>"; };
+		19BE652B1F1FF2A1007CA856 /* 100Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 100Toolbox.xml; sourceTree = "<group>"; };
+		19BE652C1F1FF2A1007CA856 /* 101Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 101Toolbox.xml; sourceTree = "<group>"; };
+		19BE652D1F1FF2A1007CA856 /* 102Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 102Toolbox.xml; sourceTree = "<group>"; };
+		19BE652E1F1FF2A1007CA856 /* 103Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 103Toolbox.xml; sourceTree = "<group>"; };
+		19BE652F1F1FF2A1007CA856 /* 104Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 104Toolbox.xml; sourceTree = "<group>"; };
+		19BE65301F1FF2A1007CA856 /* 105Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 105Toolbox.xml; sourceTree = "<group>"; };
+		19BE65311F1FF2A1007CA856 /* 106Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 106Toolbox.xml; sourceTree = "<group>"; };
+		19BE65321F1FF2A1007CA856 /* 107Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 107Toolbox.xml; sourceTree = "<group>"; };
+		19BE65331F1FF2A1007CA856 /* 108Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 108Toolbox.xml; sourceTree = "<group>"; };
+		19BE65341F1FF2A1007CA856 /* 109Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 109Toolbox.xml; sourceTree = "<group>"; };
 		19D0E2541EE877DB0030314D /* LevelChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelChooserViewController.swift; sourceTree = "<group>"; };
 		19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Blockly.framework; path = Carthage/Build/iOS/Blockly.framework; sourceTree = "<group>"; };
 		19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
@@ -693,6 +915,114 @@
 			isa = PBXGroup;
 			children = (
 				190F5C081F1FCC0400B1515E /* 1Toolbox.xml */,
+				19BE64C91F1FF2A1007CA856 /* 2Toolbox.xml */,
+				19BE64CA1F1FF2A1007CA856 /* 3Toolbox.xml */,
+				19BE64CB1F1FF2A1007CA856 /* 4Toolbox.xml */,
+				19BE64CC1F1FF2A1007CA856 /* 5Toolbox.xml */,
+				19BE64CD1F1FF2A1007CA856 /* 6Toolbox.xml */,
+				19BE64CE1F1FF2A1007CA856 /* 7Toolbox.xml */,
+				19BE64CF1F1FF2A1007CA856 /* 8Toolbox.xml */,
+				19BE64D01F1FF2A1007CA856 /* 9Toolbox.xml */,
+				19BE64D11F1FF2A1007CA856 /* 10Toolbox.xml */,
+				19BE64D21F1FF2A1007CA856 /* 11Toolbox.xml */,
+				19BE64D31F1FF2A1007CA856 /* 12Toolbox.xml */,
+				19BE64D41F1FF2A1007CA856 /* 13Toolbox.xml */,
+				19BE64D51F1FF2A1007CA856 /* 14Toolbox.xml */,
+				19BE64D61F1FF2A1007CA856 /* 15Toolbox.xml */,
+				19BE64D71F1FF2A1007CA856 /* 16Toolbox.xml */,
+				19BE64D81F1FF2A1007CA856 /* 17Toolbox.xml */,
+				19BE64D91F1FF2A1007CA856 /* 18Toolbox.xml */,
+				19BE64DA1F1FF2A1007CA856 /* 19Toolbox.xml */,
+				19BE64DB1F1FF2A1007CA856 /* 20Toolbox.xml */,
+				19BE64DC1F1FF2A1007CA856 /* 21Toolbox.xml */,
+				19BE64DD1F1FF2A1007CA856 /* 22Toolbox.xml */,
+				19BE64DE1F1FF2A1007CA856 /* 23Toolbox.xml */,
+				19BE64DF1F1FF2A1007CA856 /* 24Toolbox.xml */,
+				19BE64E01F1FF2A1007CA856 /* 25Toolbox.xml */,
+				19BE64E11F1FF2A1007CA856 /* 26Toolbox.xml */,
+				19BE64E21F1FF2A1007CA856 /* 27Toolbox.xml */,
+				19BE64E31F1FF2A1007CA856 /* 28Toolbox.xml */,
+				19BE64E41F1FF2A1007CA856 /* 29Toolbox.xml */,
+				19BE64E51F1FF2A1007CA856 /* 30Toolbox.xml */,
+				19BE64E61F1FF2A1007CA856 /* 31Toolbox.xml */,
+				19BE64E71F1FF2A1007CA856 /* 32Toolbox.xml */,
+				19BE64E81F1FF2A1007CA856 /* 33Toolbox.xml */,
+				19BE64E91F1FF2A1007CA856 /* 34Toolbox.xml */,
+				19BE64EA1F1FF2A1007CA856 /* 35Toolbox.xml */,
+				19BE64EB1F1FF2A1007CA856 /* 36Toolbox.xml */,
+				19BE64EC1F1FF2A1007CA856 /* 37Toolbox.xml */,
+				19BE64ED1F1FF2A1007CA856 /* 38Toolbox.xml */,
+				19BE64EE1F1FF2A1007CA856 /* 39Toolbox.xml */,
+				19BE64EF1F1FF2A1007CA856 /* 40Toolbox.xml */,
+				19BE64F01F1FF2A1007CA856 /* 41Toolbox.xml */,
+				19BE64F11F1FF2A1007CA856 /* 42Toolbox.xml */,
+				19BE64F21F1FF2A1007CA856 /* 43Toolbox.xml */,
+				19BE64F31F1FF2A1007CA856 /* 44Toolbox.xml */,
+				19BE64F41F1FF2A1007CA856 /* 45Toolbox.xml */,
+				19BE64F51F1FF2A1007CA856 /* 46Toolbox.xml */,
+				19BE64F61F1FF2A1007CA856 /* 47Toolbox.xml */,
+				19BE64F71F1FF2A1007CA856 /* 48Toolbox.xml */,
+				19BE64F81F1FF2A1007CA856 /* 49Toolbox.xml */,
+				19BE64F91F1FF2A1007CA856 /* 50Toolbox.xml */,
+				19BE64FA1F1FF2A1007CA856 /* 51Toolbox.xml */,
+				19BE64FB1F1FF2A1007CA856 /* 52Toolbox.xml */,
+				19BE64FC1F1FF2A1007CA856 /* 53Toolbox.xml */,
+				19BE64FD1F1FF2A1007CA856 /* 54Toolbox.xml */,
+				19BE64FE1F1FF2A1007CA856 /* 55Toolbox.xml */,
+				19BE64FF1F1FF2A1007CA856 /* 56Toolbox.xml */,
+				19BE65001F1FF2A1007CA856 /* 57Toolbox.xml */,
+				19BE65011F1FF2A1007CA856 /* 58Toolbox.xml */,
+				19BE65021F1FF2A1007CA856 /* 59Toolbox.xml */,
+				19BE65031F1FF2A1007CA856 /* 60Toolbox.xml */,
+				19BE65041F1FF2A1007CA856 /* 61Toolbox.xml */,
+				19BE65051F1FF2A1007CA856 /* 62Toolbox.xml */,
+				19BE65061F1FF2A1007CA856 /* 63Toolbox.xml */,
+				19BE65071F1FF2A1007CA856 /* 64Toolbox.xml */,
+				19BE65081F1FF2A1007CA856 /* 65Toolbox.xml */,
+				19BE65091F1FF2A1007CA856 /* 66Toolbox.xml */,
+				19BE650A1F1FF2A1007CA856 /* 67Toolbox.xml */,
+				19BE650B1F1FF2A1007CA856 /* 68Toolbox.xml */,
+				19BE650C1F1FF2A1007CA856 /* 69Toolbox.xml */,
+				19BE650D1F1FF2A1007CA856 /* 70Toolbox.xml */,
+				19BE650E1F1FF2A1007CA856 /* 71Toolbox.xml */,
+				19BE650F1F1FF2A1007CA856 /* 72Toolbox.xml */,
+				19BE65101F1FF2A1007CA856 /* 73Toolbox.xml */,
+				19BE65111F1FF2A1007CA856 /* 74Toolbox.xml */,
+				19BE65121F1FF2A1007CA856 /* 75Toolbox.xml */,
+				19BE65131F1FF2A1007CA856 /* 76Toolbox.xml */,
+				19BE65141F1FF2A1007CA856 /* 77Toolbox.xml */,
+				19BE65151F1FF2A1007CA856 /* 78Toolbox.xml */,
+				19BE65161F1FF2A1007CA856 /* 79Toolbox.xml */,
+				19BE65171F1FF2A1007CA856 /* 80Toolbox.xml */,
+				19BE65181F1FF2A1007CA856 /* 81Toolbox.xml */,
+				19BE65191F1FF2A1007CA856 /* 82Toolbox.xml */,
+				19BE651A1F1FF2A1007CA856 /* 83Toolbox.xml */,
+				19BE651B1F1FF2A1007CA856 /* 84Toolbox.xml */,
+				19BE651C1F1FF2A1007CA856 /* 85Toolbox.xml */,
+				19BE651D1F1FF2A1007CA856 /* 86Toolbox.xml */,
+				19BE651E1F1FF2A1007CA856 /* 87Toolbox.xml */,
+				19BE651F1F1FF2A1007CA856 /* 88Toolbox.xml */,
+				19BE65201F1FF2A1007CA856 /* 89Toolbox.xml */,
+				19BE65211F1FF2A1007CA856 /* 90Toolbox.xml */,
+				19BE65221F1FF2A1007CA856 /* 91Toolbox.xml */,
+				19BE65231F1FF2A1007CA856 /* 92Toolbox.xml */,
+				19BE65241F1FF2A1007CA856 /* 93Toolbox.xml */,
+				19BE65251F1FF2A1007CA856 /* 94Toolbox.xml */,
+				19BE65261F1FF2A1007CA856 /* 95Toolbox.xml */,
+				19BE65271F1FF2A1007CA856 /* 96Toolbox.xml */,
+				19BE65281F1FF2A1007CA856 /* 97Toolbox.xml */,
+				19BE65291F1FF2A1007CA856 /* 98Toolbox.xml */,
+				19BE652A1F1FF2A1007CA856 /* 99Toolbox.xml */,
+				19BE652B1F1FF2A1007CA856 /* 100Toolbox.xml */,
+				19BE652C1F1FF2A1007CA856 /* 101Toolbox.xml */,
+				19BE652D1F1FF2A1007CA856 /* 102Toolbox.xml */,
+				19BE652E1F1FF2A1007CA856 /* 103Toolbox.xml */,
+				19BE652F1F1FF2A1007CA856 /* 104Toolbox.xml */,
+				19BE65301F1FF2A1007CA856 /* 105Toolbox.xml */,
+				19BE65311F1FF2A1007CA856 /* 106Toolbox.xml */,
+				19BE65321F1FF2A1007CA856 /* 107Toolbox.xml */,
+				19BE65331F1FF2A1007CA856 /* 108Toolbox.xml */,
+				19BE65341F1FF2A1007CA856 /* 109Toolbox.xml */,
 			);
 			path = Toolboxes;
 			sourceTree = "<group>";
@@ -860,6 +1190,30 @@
 			path = Native;
 			sourceTree = "<group>";
 		};
+		19BE64C01F1FE8CA007CA856 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				19BE64C31F1FEA78007CA856 /* AppState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		19BE64C11F1FE8D6007CA856 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				19BE64C71F1FEBCE007CA856 /* LevelChangeReducer.swift */,
+			);
+			name = Reducers;
+			sourceTree = "<group>";
+		};
+		19BE64C21F1FE8DE007CA856 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				19BE64C51F1FEB61007CA856 /* ChangeLevel.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
 		7D64C04E1EA7CB950037067E = {
 			isa = PBXGroup;
 			children = (
@@ -886,6 +1240,9 @@
 		7D64C0591EA7CB950037067E /* Rapid Router */ = {
 			isa = PBXGroup;
 			children = (
+				19BE64C01F1FE8CA007CA856 /* State */,
+				19BE64C21F1FE8DE007CA856 /* Actions */,
+				19BE64C11F1FE8D6007CA856 /* Reducers */,
 				190F5C071F1FCC0400B1515E /* Toolboxes */,
 				191CE7331EDF5FC000BE419D /* CustomBlocks.json */,
 				190F20E81EA7D94300257624 /* UnityUtils.h */,
@@ -1011,12 +1368,120 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BE65761F1FF2A1007CA856 /* 67Toolbox.xml in Resources */,
+				19BE654A1F1FF2A1007CA856 /* 23Toolbox.xml in Resources */,
+				19BE65391F1FF2A1007CA856 /* 6Toolbox.xml in Resources */,
+				19BE656F1F1FF2A1007CA856 /* 60Toolbox.xml in Resources */,
+				19BE658C1F1FF2A1007CA856 /* 89Toolbox.xml in Resources */,
+				19BE65421F1FF2A1007CA856 /* 15Toolbox.xml in Resources */,
+				19BE65831F1FF2A1007CA856 /* 80Toolbox.xml in Resources */,
+				19BE65401F1FF2A1007CA856 /* 13Toolbox.xml in Resources */,
+				19BE655C1F1FF2A1007CA856 /* 41Toolbox.xml in Resources */,
+				19BE653A1F1FF2A1007CA856 /* 7Toolbox.xml in Resources */,
+				19BE65571F1FF2A1007CA856 /* 36Toolbox.xml in Resources */,
 				191CE7341EDF5FC000BE419D /* CustomBlocks.json in Resources */,
+				19BE65931F1FF2A1007CA856 /* 96Toolbox.xml in Resources */,
 				190F5C091F1FCC0400B1515E /* 1Toolbox.xml in Resources */,
+				19BE65701F1FF2A1007CA856 /* 61Toolbox.xml in Resources */,
+				19BE65711F1FF2A1007CA856 /* 62Toolbox.xml in Resources */,
+				19BE65661F1FF2A1007CA856 /* 51Toolbox.xml in Resources */,
+				19BE65351F1FF2A1007CA856 /* 2Toolbox.xml in Resources */,
+				19BE65841F1FF2A1007CA856 /* 81Toolbox.xml in Resources */,
+				19BE659F1F1FF2A1007CA856 /* 108Toolbox.xml in Resources */,
+				19BE65821F1FF2A1007CA856 /* 79Toolbox.xml in Resources */,
+				19BE657E1F1FF2A1007CA856 /* 75Toolbox.xml in Resources */,
+				19BE65651F1FF2A1007CA856 /* 50Toolbox.xml in Resources */,
+				19BE65601F1FF2A1007CA856 /* 45Toolbox.xml in Resources */,
+				19BE654F1F1FF2A1007CA856 /* 28Toolbox.xml in Resources */,
+				19BE659D1F1FF2A1007CA856 /* 106Toolbox.xml in Resources */,
+				19BE653E1F1FF2A1007CA856 /* 11Toolbox.xml in Resources */,
+				19BE65741F1FF2A1007CA856 /* 65Toolbox.xml in Resources */,
+				19BE656C1F1FF2A1007CA856 /* 57Toolbox.xml in Resources */,
+				19BE65991F1FF2A1007CA856 /* 102Toolbox.xml in Resources */,
+				19BE655D1F1FF2A1007CA856 /* 42Toolbox.xml in Resources */,
+				19BE65771F1FF2A1007CA856 /* 68Toolbox.xml in Resources */,
+				19BE65891F1FF2A1007CA856 /* 86Toolbox.xml in Resources */,
+				19BE658E1F1FF2A1007CA856 /* 91Toolbox.xml in Resources */,
+				19BE65501F1FF2A1007CA856 /* 29Toolbox.xml in Resources */,
+				19BE653C1F1FF2A1007CA856 /* 9Toolbox.xml in Resources */,
+				19BE659C1F1FF2A1007CA856 /* 105Toolbox.xml in Resources */,
+				19BE65691F1FF2A1007CA856 /* 54Toolbox.xml in Resources */,
+				19BE65511F1FF2A1007CA856 /* 30Toolbox.xml in Resources */,
+				19BE65721F1FF2A1007CA856 /* 63Toolbox.xml in Resources */,
+				19BE65811F1FF2A1007CA856 /* 78Toolbox.xml in Resources */,
+				19BE658A1F1FF2A1007CA856 /* 87Toolbox.xml in Resources */,
+				19BE655B1F1FF2A1007CA856 /* 40Toolbox.xml in Resources */,
+				19BE65381F1FF2A1007CA856 /* 5Toolbox.xml in Resources */,
+				19BE659B1F1FF2A1007CA856 /* 104Toolbox.xml in Resources */,
+				19BE65481F1FF2A1007CA856 /* 21Toolbox.xml in Resources */,
 				7D64C0651EA7CB950037067E /* LaunchScreen.storyboard in Resources */,
+				19BE657B1F1FF2A1007CA856 /* 72Toolbox.xml in Resources */,
+				19BE65471F1FF2A1007CA856 /* 20Toolbox.xml in Resources */,
+				19BE653F1F1FF2A1007CA856 /* 12Toolbox.xml in Resources */,
+				19BE655A1F1FF2A1007CA856 /* 39Toolbox.xml in Resources */,
+				19BE65981F1FF2A1007CA856 /* 101Toolbox.xml in Resources */,
+				19BE657A1F1FF2A1007CA856 /* 71Toolbox.xml in Resources */,
+				19BE655F1F1FF2A1007CA856 /* 44Toolbox.xml in Resources */,
 				7D64C0621EA7CB950037067E /* Assets.xcassets in Resources */,
+				19BE656B1F1FF2A1007CA856 /* 56Toolbox.xml in Resources */,
+				19BE657F1F1FF2A1007CA856 /* 76Toolbox.xml in Resources */,
+				19BE65881F1FF2A1007CA856 /* 85Toolbox.xml in Resources */,
+				19BE65631F1FF2A1007CA856 /* 48Toolbox.xml in Resources */,
+				19BE65561F1FF2A1007CA856 /* 35Toolbox.xml in Resources */,
+				19BE656E1F1FF2A1007CA856 /* 59Toolbox.xml in Resources */,
+				19BE65641F1FF2A1007CA856 /* 49Toolbox.xml in Resources */,
+				19BE65551F1FF2A1007CA856 /* 34Toolbox.xml in Resources */,
+				19BE65801F1FF2A1007CA856 /* 77Toolbox.xml in Resources */,
+				19BE658D1F1FF2A1007CA856 /* 90Toolbox.xml in Resources */,
+				19BE654D1F1FF2A1007CA856 /* 26Toolbox.xml in Resources */,
+				19BE65371F1FF2A1007CA856 /* 4Toolbox.xml in Resources */,
+				19BE65911F1FF2A1007CA856 /* 94Toolbox.xml in Resources */,
+				19BE65861F1FF2A1007CA856 /* 83Toolbox.xml in Resources */,
+				19BE65431F1FF2A1007CA856 /* 16Toolbox.xml in Resources */,
+				19BE65671F1FF2A1007CA856 /* 52Toolbox.xml in Resources */,
+				19BE653D1F1FF2A1007CA856 /* 10Toolbox.xml in Resources */,
+				19BE65791F1FF2A1007CA856 /* 70Toolbox.xml in Resources */,
+				19BE65681F1FF2A1007CA856 /* 53Toolbox.xml in Resources */,
+				19BE65411F1FF2A1007CA856 /* 14Toolbox.xml in Resources */,
+				19BE65451F1FF2A1007CA856 /* 18Toolbox.xml in Resources */,
+				19BE65361F1FF2A1007CA856 /* 3Toolbox.xml in Resources */,
+				19BE659E1F1FF2A1007CA856 /* 107Toolbox.xml in Resources */,
+				19BE65901F1FF2A1007CA856 /* 93Toolbox.xml in Resources */,
+				19BE654C1F1FF2A1007CA856 /* 25Toolbox.xml in Resources */,
+				19BE65531F1FF2A1007CA856 /* 32Toolbox.xml in Resources */,
+				19BE65521F1FF2A1007CA856 /* 31Toolbox.xml in Resources */,
+				19BE65621F1FF2A1007CA856 /* 47Toolbox.xml in Resources */,
+				19BE654B1F1FF2A1007CA856 /* 24Toolbox.xml in Resources */,
 				190F20E61EA7D8E700257624 /* Unity.xcconfig in Resources */,
+				19BE659A1F1FF2A1007CA856 /* 103Toolbox.xml in Resources */,
+				19BE65491F1FF2A1007CA856 /* 22Toolbox.xml in Resources */,
+				19BE65441F1FF2A1007CA856 /* 17Toolbox.xml in Resources */,
+				19BE65611F1FF2A1007CA856 /* 46Toolbox.xml in Resources */,
+				19BE657D1F1FF2A1007CA856 /* 74Toolbox.xml in Resources */,
+				19BE65871F1FF2A1007CA856 /* 84Toolbox.xml in Resources */,
+				19BE654E1F1FF2A1007CA856 /* 27Toolbox.xml in Resources */,
+				19BE65581F1FF2A1007CA856 /* 37Toolbox.xml in Resources */,
+				19BE655E1F1FF2A1007CA856 /* 43Toolbox.xml in Resources */,
+				19BE65781F1FF2A1007CA856 /* 69Toolbox.xml in Resources */,
+				19BE65751F1FF2A1007CA856 /* 66Toolbox.xml in Resources */,
+				19BE65461F1FF2A1007CA856 /* 19Toolbox.xml in Resources */,
+				19BE65541F1FF2A1007CA856 /* 33Toolbox.xml in Resources */,
+				19BE65A01F1FF2A1007CA856 /* 109Toolbox.xml in Resources */,
+				19BE653B1F1FF2A1007CA856 /* 8Toolbox.xml in Resources */,
+				19BE65941F1FF2A1007CA856 /* 97Toolbox.xml in Resources */,
+				19BE658F1F1FF2A1007CA856 /* 92Toolbox.xml in Resources */,
+				19BE656A1F1FF2A1007CA856 /* 55Toolbox.xml in Resources */,
+				19BE65851F1FF2A1007CA856 /* 82Toolbox.xml in Resources */,
+				19BE65951F1FF2A1007CA856 /* 98Toolbox.xml in Resources */,
+				19BE65971F1FF2A1007CA856 /* 100Toolbox.xml in Resources */,
+				19BE657C1F1FF2A1007CA856 /* 73Toolbox.xml in Resources */,
+				19BE65731F1FF2A1007CA856 /* 64Toolbox.xml in Resources */,
+				19BE656D1F1FF2A1007CA856 /* 58Toolbox.xml in Resources */,
 				7D64C0601EA7CB950037067E /* Main.storyboard in Resources */,
+				19BE65921F1FF2A1007CA856 /* 95Toolbox.xml in Resources */,
+				19BE65961F1FF2A1007CA856 /* 99Toolbox.xml in Resources */,
+				19BE65591F1FF2A1007CA856 /* 38Toolbox.xml in Resources */,
+				19BE658B1F1FF2A1007CA856 /* 88Toolbox.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1577,7 @@
 				190F1F041EA7D60200257624 /* CMVideoSampling.mm in Sources */,
 				190F20E31EA7D61100257624 /* RegisterFeatures.cpp in Sources */,
 				190F20EC1EA7DA8500257624 /* main.swift in Sources */,
+				19BE64C61F1FEB61007CA856 /* ChangeLevel.swift in Sources */,
 				190F1F171EA7D60200257624 /* UnityAppController.mm in Sources */,
 				19830E821EDF417A00503B38 /* Bulk_System.Xml_2.cpp in Sources */,
 				190F1F0B1EA7D60200257624 /* GlesHelper.mm in Sources */,
@@ -1130,6 +1596,7 @@
 				190F1F121EA7D60200257624 /* VideoPlayer.mm in Sources */,
 				19830E681EDF417A00503B38 /* Bulk_Generics_7.cpp in Sources */,
 				190F1E771EA7D5FF00257624 /* CrashReporter.mm in Sources */,
+				19BE64C41F1FEA78007CA856 /* AppState.swift in Sources */,
 				190F1F111EA7D60200257624 /* UnityReplayKit_Scripting.mm in Sources */,
 				190F1F131EA7D60200257624 /* WWWConnection.mm in Sources */,
 				19830E851EDF417A00503B38 /* Bulk_System_1.cpp in Sources */,
@@ -1147,6 +1614,7 @@
 				190F1F081EA7D60200257624 /* EAGLContextHelper.mm in Sources */,
 				19830EB91EDF417A00503B38 /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */,
 				19830E9D1EDF417A00503B38 /* Il2CppCompilerCalculateTypeValues_19Table.cpp in Sources */,
+				19BE64C81F1FEBCE007CA856 /* LevelChangeReducer.swift in Sources */,
 				19830E561EDF417A00503B38 /* Bulk_DOTween46_0.cpp in Sources */,
 				190F1EF61EA7D60200257624 /* AppDelegateListener.mm in Sources */,
 				19830E611EDF417A00503B38 /* Bulk_Generics_15.cpp in Sources */,

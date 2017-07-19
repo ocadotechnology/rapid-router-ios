@@ -9,8 +9,9 @@
 import UIKit
 import SnapKit
 import Blockly
+import ReSwift
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, StoreSubscriber {
     var unityView: UIView?
 
     @IBOutlet weak var gameView: UIView!
@@ -18,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var workbenchView: UIView!
 
     let workBenchViewController = WorkbenchViewController(style: .defaultStyle)
+
+    lazy var toolboxLoader: ToolboxLoader = {
+        return ToolboxLoader(workbench: self.workBenchViewController)
+    }()
     
     @IBAction func startUnity(sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -38,6 +43,10 @@ class ViewController: UIViewController {
         unityView!.removeFromSuperview()
     }
 
+    func newState(state: AppState) {
+        toolboxLoader.loadToolbox(level: state.level)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,7 +57,7 @@ class ViewController: UIViewController {
             print("something went wrong")
         }
 
-        ToolboxLoader(workbench: workBenchViewController).loadToolbox(level: 1)
+        toolboxLoader.loadToolbox(level: mainStore.state.level)
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)
@@ -60,11 +69,19 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        mainStore.subscribe(self)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        mainStore.unsubscribe(self)
+    }
+
+
     @IBAction func sendBlocksToUnity(_ sender: Any) {
         let blocks = workBenchViewController.workspace?.topLevelBlocks().map { $0.name }
 
