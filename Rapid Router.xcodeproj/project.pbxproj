@@ -175,6 +175,8 @@
 		19830EC71EDF417C00503B38 /* UnityClassRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19830C031EDF415F00503B38 /* UnityClassRegistration.cpp */; };
 		19830EC81EDF417C00503B38 /* UnityICallRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19830E4F1EDF417A00503B38 /* UnityICallRegistration.cpp */; };
 		19830EC91EDF417C00503B38 /* UnresolvedVirtualCallStubs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19830E501EDF417A00503B38 /* UnresolvedVirtualCallStubs.cpp */; };
+		198AF3641F1FE3FD000D081D /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198AF3631F1FE3FD000D081D /* ReSwift.framework */; };
+		198AF3651F1FE3FD000D081D /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 198AF3631F1FE3FD000D081D /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1995D7AF1EDF58C300A1D56E /* Blockly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */; };
 		1995D7B01EDF58C300A1D56E /* Blockly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19A862F51EDF447D00843E21 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19830ECC1EDF43FC00503B38 /* AVFoundation.framework */; };
@@ -233,6 +235,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				19F6C7EF1EDF53050014EA49 /* AEXML.framework in Embed Frameworks */,
+				198AF3651F1FE3FD000D081D /* ReSwift.framework in Embed Frameworks */,
 				19F6C8191EDF53050014EA49 /* SnapKit.framework in Embed Frameworks */,
 				1995D7B01EDF58C300A1D56E /* Blockly.framework in Embed Frameworks */,
 			);
@@ -465,6 +468,7 @@
 		1983FAD01EDF40E900503B38 /* Il2CppMethodPointerTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Il2CppMethodPointerTable.cpp; sourceTree = "<group>"; };
 		1983FAD11EDF40E900503B38 /* Il2CppReversePInvokeWrapperTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Il2CppReversePInvokeWrapperTable.cpp; sourceTree = "<group>"; };
 		1983FAD21EDF40E900503B38 /* Il2CppTypeDefinitions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Il2CppTypeDefinitions.cpp; sourceTree = "<group>"; };
+		198AF3631F1FE3FD000D081D /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		19A862EF1EDF446A00843E21 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
 		19A862F11EDF447000843E21 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		19A862F31EDF447600843E21 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -531,6 +535,7 @@
 				19F6C8101EDF53050014EA49 /* MediaToolbox.framework in Frameworks */,
 				19A862F51EDF447D00843E21 /* AVFoundation.framework in Frameworks */,
 				190F20F31EA7F5D100257624 /* libiPhone-lib.a in Frameworks */,
+				198AF3641F1FE3FD000D081D /* ReSwift.framework in Frameworks */,
 				196E23D41EB1E676009BE15D /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,6 +863,7 @@
 		7D64C04E1EA7CB950037067E = {
 			isa = PBXGroup;
 			children = (
+				198AF3631F1FE3FD000D081D /* ReSwift.framework */,
 				190F20EE1EA7E6C700257624 /* PrefixHeader.pch */,
 				190F20ED1EA7DD8B00257624 /* UnityBridge.h */,
 				7D64C07D1EA7CCCE0037067E /* Unity */,

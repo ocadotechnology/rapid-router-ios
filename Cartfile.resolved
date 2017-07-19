@@ -1,3 +1,4 @@
+github "ReSwift/ReSwift" "4.0.0"
 github "SnapKit/SnapKit" "3.2.0"
 github "google/blockly-ios" "1.0.0"
 github "tadija/AEXML" "4.1.0"
