@@ -48,21 +48,7 @@ class ViewController: UIViewController {
             print("something went wrong")
         }
 
-        // Load toolbox
-        do {
-            let toolboxPath = "1Toolbox.xml"
-            if let bundlePath = Bundle.main.path(forResource: toolboxPath, ofType: nil) {
-                let xmlString = try String(
-                    contentsOfFile: bundlePath, encoding: String.Encoding.utf8)
-                let toolbox = try Toolbox.makeToolbox(
-                    xmlString: xmlString, factory: blockFactory)
-                try workBenchViewController.loadToolbox(toolbox)
-            } else {
-                print("Could not load toolbox XML from '\(toolboxPath)'")
-            }
-        } catch let error {
-            print("An error occurred loading the toolbox: \(error)")
-        }
+        ToolboxLoader(workbench: workBenchViewController).loadToolbox(level: 1)
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)
