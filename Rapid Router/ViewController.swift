@@ -44,7 +44,11 @@ class ViewController: UIViewController, StoreSubscriber {
     }
 
     func newState(state: AppState) {
-        toolboxLoader.loadToolbox(level: state.level)
+        do {
+            try toolboxLoader.loadToolbox(level: state.level)
+        } catch let error {
+            print("An error occurred loading the toolbox: \(error)")
+        }
     }
 
     override func viewDidLoad() {
@@ -53,11 +57,10 @@ class ViewController: UIViewController, StoreSubscriber {
         let blockFactory = workBenchViewController.blockFactory
         do {
             try blockFactory.load(fromJSONPaths: ["CustomBlocks.json"])
+            try toolboxLoader.loadToolbox(level: mainStore.state.level)
         } catch {
             print("something went wrong")
         }
-
-        toolboxLoader.loadToolbox(level: mainStore.state.level)
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)

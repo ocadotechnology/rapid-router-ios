@@ -151,7 +151,7 @@
         <!--Level Chooser View Controller-->
         <scene sceneID="clS-V4-fe8">
             <objects>
-                <tableViewController id="zSa-gU-fkr" customClass="LevelChooserViewController" customModule="Rapid_Router" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LevelChooserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zSa-gU-fkr" customClass="LevelChooserViewController" customModule="Rapid_Router" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="24F-Gc-Z2F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

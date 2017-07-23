@@ -14,7 +14,6 @@ func levelChangeReducer(action: Action, state: AppState?) -> AppState {
 
     switch action {
     case let action as ChangeLevel:
-        UnitySendMessage("ChapterController", "LevelChangeListener", String(action.level))
         state.level = action.level
     default:
         break

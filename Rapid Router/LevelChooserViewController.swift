@@ -6,7 +6,11 @@
 //  Copyright © 2017 Ocado. All rights reserved.
 //
 
+import ReSwift
+
 class LevelChooserViewController: UITableViewController {
+
+    var store: DispatchingStoreType = mainStore
 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -25,7 +29,7 @@ class LevelChooserViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let level = String(indexPath.row)
-        mainStore.dispatch(ChangeLevel(level: Int(level)!))
+        store.dispatch(ChangeLevel(level: Int(level)!))
     }
 
 }

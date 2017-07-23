@@ -4,7 +4,8 @@ import ReSwift
 
 let mainStore = Store<AppState>(
     reducer: levelChangeReducer,
-    state: nil
+    state: nil,
+    middleware: [unityComunicatorMiddleware]
 )
 
 class AppDelegate: UIResponder, UIApplicationDelegate {

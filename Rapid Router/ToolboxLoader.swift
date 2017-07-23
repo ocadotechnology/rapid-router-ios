@@ -13,13 +13,9 @@ struct ToolboxLoader {
     
     let workbench: WorkbenchViewController
 
-    func loadToolbox(level: Int) {
-        do {
-            let toolbox = try getToolbox(level: level)
-            try workbench.loadToolbox(toolbox)
-        } catch let error {
-            print("An error occurred loading the toolbox: \(error)")
-        }
+    func loadToolbox(level: Int) throws {
+        let toolbox = try getToolbox(level: level)
+        try workbench.loadToolbox(toolbox)
     }
 
     private func getToolbox(level: Int) throws -> Toolbox {

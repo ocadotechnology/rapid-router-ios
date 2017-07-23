@@ -53,6 +53,11 @@
 		190F20F31EA7F5D100257624 /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190F20DA1EA7D61100257624 /* libiPhone-lib.a */; };
 		190F5C091F1FCC0400B1515E /* 1Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 190F5C081F1FCC0400B1515E /* 1Toolbox.xml */; };
 		191CE7341EDF5FC000BE419D /* CustomBlocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 191CE7331EDF5FC000BE419D /* CustomBlocks.json */; };
+		196232A81F2527F0003E78BC /* UnityCommunicatorMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196232A71F2527F0003E78BC /* UnityCommunicatorMiddleware.swift */; };
+		196232AA1F25302F003E78BC /* LevelChangeReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196232A91F25302F003E78BC /* LevelChangeReducerTests.swift */; };
+		196232AB1F253A8E003E78BC /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198AF3631F1FE3FD000D081D /* ReSwift.framework */; };
+		196232AD1F254462003E78BC /* LevelChooserViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196232AC1F254462003E78BC /* LevelChooserViewControllerTests.swift */; };
+		196232AF1F25509E003E78BC /* ToolboxLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196232AE1F25509E003E78BC /* ToolboxLoaderTests.swift */; };
 		196E23D41EB1E676009BE15D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196E23D31EB1E676009BE15D /* SnapKit.framework */; };
 		19830E511EDF417A00503B38 /* Bulk_Assembly-CSharp-firstpass_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1983F93E1EDF40E600503B38 /* Bulk_Assembly-CSharp-firstpass_0.cpp */; };
 		19830E521EDF417A00503B38 /* Bulk_Assembly-CSharp_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1983F93F1EDF40E600503B38 /* Bulk_Assembly-CSharp_0.cpp */; };
@@ -325,7 +330,6 @@
 		7D64C0601EA7CB950037067E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D64C05E1EA7CB950037067E /* Main.storyboard */; };
 		7D64C0621EA7CB950037067E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D64C0611EA7CB950037067E /* Assets.xcassets */; };
 		7D64C0651EA7CB950037067E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D64C0631EA7CB950037067E /* LaunchScreen.storyboard */; };
-		7D64C0701EA7CB950037067E /* Rapid_RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C06F1EA7CB950037067E /* Rapid_RouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -453,6 +457,10 @@
 		190FF3751EA7D42500257624 /* iPhone_Sensors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPhone_Sensors.mm; sourceTree = "<group>"; };
 		190FF3761EA7D42500257624 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		191CE7331EDF5FC000BE419D /* CustomBlocks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomBlocks.json; sourceTree = "<group>"; };
+		196232A71F2527F0003E78BC /* UnityCommunicatorMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityCommunicatorMiddleware.swift; sourceTree = "<group>"; };
+		196232A91F25302F003E78BC /* LevelChangeReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelChangeReducerTests.swift; sourceTree = "<group>"; };
+		196232AC1F254462003E78BC /* LevelChooserViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelChooserViewControllerTests.swift; sourceTree = "<group>"; };
+		196232AE1F25509E003E78BC /* ToolboxLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolboxLoaderTests.swift; sourceTree = "<group>"; };
 		196E23D01EB12DEF009BE15D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		196E23D31EB1E676009BE15D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		19830C031EDF415F00503B38 /* UnityClassRegistration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnityClassRegistration.cpp; sourceTree = "<group>"; };
@@ -725,7 +733,6 @@
 		7D64C0641EA7CB950037067E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D64C0661EA7CB950037067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D64C06B1EA7CB950037067E /* Rapid RouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rapid RouterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D64C06F1EA7CB950037067E /* Rapid_RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rapid_RouterTests.swift; sourceTree = "<group>"; };
 		7D64C0711EA7CB950037067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -766,6 +773,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196232AB1F253A8E003E78BC /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,6 +890,7 @@
 		190F20EF1EA7F53E00257624 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				198AF3631F1FE3FD000D081D /* ReSwift.framework */,
 				19F6C7E61EDF4EBB0014EA49 /* Blockly.framework */,
 				19F6C7E71EDF4EBB0014EA49 /* AEXML.framework */,
 				19A863101EDF44F300843E21 /* Metal.framework */,
@@ -1057,6 +1066,14 @@
 			path = RapidRouterUnityBuild/Classes;
 			sourceTree = "<group>";
 		};
+		196232A61F2526DD003E78BC /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				196232A71F2527F0003E78BC /* UnityCommunicatorMiddleware.swift */,
+			);
+			name = Middlewares;
+			sourceTree = "<group>";
+		};
 		1983F6641EDF40E400503B38 /* Native */ = {
 			isa = PBXGroup;
 			children = (
@@ -1217,7 +1234,6 @@
 		7D64C04E1EA7CB950037067E = {
 			isa = PBXGroup;
 			children = (
-				198AF3631F1FE3FD000D081D /* ReSwift.framework */,
 				190F20EE1EA7E6C700257624 /* PrefixHeader.pch */,
 				190F20ED1EA7DD8B00257624 /* UnityBridge.h */,
 				7D64C07D1EA7CCCE0037067E /* Unity */,
@@ -1240,6 +1256,7 @@
 		7D64C0591EA7CB950037067E /* Rapid Router */ = {
 			isa = PBXGroup;
 			children = (
+				196232A61F2526DD003E78BC /* Middlewares */,
 				19BE64C01F1FE8CA007CA856 /* State */,
 				19BE64C21F1FE8DE007CA856 /* Actions */,
 				19BE64C11F1FE8D6007CA856 /* Reducers */,
@@ -1264,8 +1281,10 @@
 		7D64C06E1EA7CB950037067E /* Rapid RouterTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D64C06F1EA7CB950037067E /* Rapid_RouterTests.swift */,
 				7D64C0711EA7CB950037067E /* Info.plist */,
+				196232A91F25302F003E78BC /* LevelChangeReducerTests.swift */,
+				196232AC1F254462003E78BC /* LevelChooserViewControllerTests.swift */,
+				196232AE1F25509E003E78BC /* ToolboxLoaderTests.swift */,
 			);
 			path = "Rapid RouterTests";
 			sourceTree = "<group>";
@@ -1504,6 +1523,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AEXML.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Blockly.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -1598,6 +1618,7 @@
 				190F1E771EA7D5FF00257624 /* CrashReporter.mm in Sources */,
 				19BE64C41F1FEA78007CA856 /* AppState.swift in Sources */,
 				190F1F111EA7D60200257624 /* UnityReplayKit_Scripting.mm in Sources */,
+				196232A81F2527F0003E78BC /* UnityCommunicatorMiddleware.swift in Sources */,
 				190F1F131EA7D60200257624 /* WWWConnection.mm in Sources */,
 				19830E851EDF417A00503B38 /* Bulk_System_1.cpp in Sources */,
 				19830EA41EDF417A00503B38 /* Il2CppCompilerCalculateTypeValues_25Table.cpp in Sources */,
@@ -1713,7 +1734,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D64C0701EA7CB950037067E /* Rapid_RouterTests.swift in Sources */,
+				196232AF1F25509E003E78BC /* ToolboxLoaderTests.swift in Sources */,
+				196232AA1F25302F003E78BC /* LevelChangeReducerTests.swift in Sources */,
+				196232AD1F254462003E78BC /* LevelChooserViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1898,6 +1921,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9FE358G3AM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Rapid RouterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ocado.Rapid-RouterTests";
@@ -1913,6 +1940,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9FE358G3AM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Rapid RouterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ocado.Rapid-RouterTests";
