@@ -9,7 +9,11 @@
 import Foundation
 import Blockly
 
-struct ToolboxLoader {
+protocol ToolboxLoadable {
+    func loadToolbox(level: Int) throws
+}
+
+struct ToolboxLoader: ToolboxLoadable {
     
     let workbench: WorkbenchViewController
 

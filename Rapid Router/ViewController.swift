@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  Rapid Router
@@ -12,7 +13,7 @@ import Blockly
 import ReSwift
 
 class ViewController: UIViewController, StoreSubscriber {
-    var unityView: UIView?
+    lazy var unityView: UIView = UnityGetGLView()!
 
     @IBOutlet weak var gameView: UIView!
 
@@ -20,7 +21,9 @@ class ViewController: UIViewController, StoreSubscriber {
 
     let workBenchViewController = WorkbenchViewController(style: .defaultStyle)
 
-    lazy var toolboxLoader: ToolboxLoader = {
+    var store: Store<AppState> = mainStore
+
+    lazy var toolboxLoader: ToolboxLoadable = {
         return ToolboxLoader(workbench: self.workBenchViewController)
     }()
     
@@ -28,10 +31,8 @@ class ViewController: UIViewController, StoreSubscriber {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.startUnity()
 
-        unityView = UnityGetGLView()!
-
-        gameView.addSubview(unityView!)
-        unityView!.snp.makeConstraints { make in
+        gameView.addSubview(unityView)
+        unityView.snp.makeConstraints { make in
             make.edges.equalTo(gameView)
         }
 
@@ -40,12 +41,16 @@ class ViewController: UIViewController, StoreSubscriber {
     @IBAction func stopUnity(sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.stopUnity()
-        unityView!.removeFromSuperview()
+        unityView.removeFromSuperview()
     }
 
     func newState(state: AppState) {
+        loadToolbox(level: state.level)
+    }
+
+    private func loadToolbox(level: Int) {
         do {
-            try toolboxLoader.loadToolbox(level: state.level)
+            try toolboxLoader.loadToolbox(level: level)
         } catch let error {
             print("An error occurred loading the toolbox: \(error)")
         }
@@ -57,10 +62,11 @@ class ViewController: UIViewController, StoreSubscriber {
         let blockFactory = workBenchViewController.blockFactory
         do {
             try blockFactory.load(fromJSONPaths: ["CustomBlocks.json"])
-            try toolboxLoader.loadToolbox(level: mainStore.state.level)
         } catch {
             print("something went wrong")
         }
+
+        loadToolbox(level: mainStore.state.level)
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)
@@ -72,16 +78,12 @@ class ViewController: UIViewController, StoreSubscriber {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        mainStore.subscribe(self)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        store.subscribe(self)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        mainStore.unsubscribe(self)
+        store.unsubscribe(self)
     }
 
 

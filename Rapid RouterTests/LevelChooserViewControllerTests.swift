@@ -37,12 +37,12 @@ class LevelChooserViewControllerTests: XCTestCase {
         cell = controller.tableView(controller.tableView, cellForRowAt: IndexPath(row: 105, section: 0))
         XCTAssertEqual(cell.textLabel?.text, "Level 106")
     }
-    
-}
 
-class TestStore: DispatchingStoreType {
-    var dispatchedActions: [Action] = []
-    func dispatch(_ action: Action) {
-        dispatchedActions.append(action)
+    class TestStore: DispatchingStoreType {
+        var dispatchedActions: [Action] = []
+        func dispatch(_ action: Action) {
+            dispatchedActions.append(action)
+        }
     }
+
 }
