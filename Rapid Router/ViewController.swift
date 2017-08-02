@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  Rapid Router
@@ -9,24 +10,29 @@
 import UIKit
 import SnapKit
 import Blockly
+import ReSwift
 
-class ViewController: UIViewController {
-    var unityView: UIView?
+class ViewController: UIViewController, StoreSubscriber {
+    lazy var unityView: UIView = UnityGetGLView()!
 
     @IBOutlet weak var gameView: UIView!
 
     @IBOutlet weak var workbenchView: UIView!
 
     let workBenchViewController = WorkbenchViewController(style: .defaultStyle)
+
+    var store: Store<AppState> = mainStore
+
+    lazy var toolboxLoader: ToolboxLoadable = {
+        return ToolboxLoader(workbench: self.workBenchViewController)
+    }()
     
     @IBAction func startUnity(sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.startUnity()
 
-        unityView = UnityGetGLView()!
-
-        gameView.addSubview(unityView!)
-        unityView!.snp.makeConstraints { make in
+        gameView.addSubview(unityView)
+        unityView.snp.makeConstraints { make in
             make.edges.equalTo(gameView)
         }
 
@@ -35,7 +41,19 @@ class ViewController: UIViewController {
     @IBAction func stopUnity(sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.stopUnity()
-        unityView!.removeFromSuperview()
+        unityView.removeFromSuperview()
+    }
+
+    func newState(state: AppState) {
+        loadToolbox(level: state.level)
+    }
+
+    private func loadToolbox(level: Int) {
+        do {
+            try toolboxLoader.loadToolbox(level: level)
+        } catch let error {
+            print("An error occurred loading the toolbox: \(error)")
+        }
     }
 
     override func viewDidLoad() {
@@ -48,21 +66,7 @@ class ViewController: UIViewController {
             print("something went wrong")
         }
 
-        // Load toolbox
-        do {
-            let toolboxPath = "1Toolbox.xml"
-            if let bundlePath = Bundle.main.path(forResource: toolboxPath, ofType: nil) {
-                let xmlString = try String(
-                    contentsOfFile: bundlePath, encoding: String.Encoding.utf8)
-                let toolbox = try Toolbox.makeToolbox(
-                    xmlString: xmlString, factory: blockFactory)
-                try workBenchViewController.loadToolbox(toolbox)
-            } else {
-                print("Could not load toolbox XML from '\(toolboxPath)'")
-            }
-        } catch let error {
-            print("An error occurred loading the toolbox: \(error)")
-        }
+        loadToolbox(level: mainStore.state.level)
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)
@@ -74,11 +78,15 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        store.subscribe(self)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        store.unsubscribe(self)
     }
+
+
     @IBAction func sendBlocksToUnity(_ sender: Any) {
         let blocks = workBenchViewController.workspace?.topLevelBlocks().map { $0.name }
 

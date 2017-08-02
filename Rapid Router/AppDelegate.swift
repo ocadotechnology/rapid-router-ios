@@ -1,6 +1,12 @@
 
 
-import UIKit
+import ReSwift
+
+let mainStore = Store<AppState>(
+    reducer: levelChangeReducer,
+    state: nil,
+    middleware: [unityComunicatorMiddleware]
+)
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var currentUnityController: UnityAppController?
