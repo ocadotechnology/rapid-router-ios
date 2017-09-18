@@ -56,5 +56,7 @@ addfiles('Rapid Router/RapidRouterUnityBuild/Classes/*', classes_group, target)
 
 libraries_group['libil2cpp'].remove_from_project()
 
+project.predictabilize_uuids()
+
 project.save(project_path)
 
