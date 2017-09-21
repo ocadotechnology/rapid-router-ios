@@ -71,8 +71,10 @@ project.targets.each do |t|
   end
 end
 
+# get the Unity group in the project 
 unity_group = project['Unity']
 
+# remove Libraries and Classes groups if they already exist
 if unity_group['Libraries']
 	unity_group['Libraries'].clear()
 	unity_group['Libraries'].remove_from_project()
@@ -82,17 +84,20 @@ if unity_group['Classes']
 	unity_group['Classes'].remove_from_project()
 end
 
+# Create the Libraries and Classes group
 libraries_group = unity_group.new_group('Libraries', path = 'RapidRouterUnityBuild/Libraries/')
 classes_group = unity_group.new_group('Classes', path = 'RapidRouterUnityBuild/Classes/')
 
-# libraries_group = unity_group.new_group('Libraries', path = 'Rapid Router/RapidRouterUnityBuild/Libraries/', source_tree = unity_group)
-
+# Add all the necessary files to those groups
 addfiles('Rapid Router/RapidRouterUnityBuild/Libraries/*', libraries_group, target)
 addfiles('Rapid Router/RapidRouterUnityBuild/Classes/*', classes_group, target)
 
+# Remove the libil2cpp group from the project
 libraries_group['libil2cpp'].remove_from_project()
 
+# Make the project file uuids deterministic
 project.predictabilize_uuids()
 
+# Save the changes to the project file
 project.save(project_path)
 
