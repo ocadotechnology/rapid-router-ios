@@ -9,7 +9,7 @@ let mainStore = Store<AppState>(
 )
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var currentUnityController: UnityAppController?
+    @objc var currentUnityController: UnityAppController?
     var application: UIApplication?
     var isUnityRunning = false
     var window: UIWindow?
