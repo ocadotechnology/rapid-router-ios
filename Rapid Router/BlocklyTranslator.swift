@@ -7,11 +7,26 @@
 //
 
 import Blockly
+import SwiftProtobuf
+
+enum TranslatorError: Error {
+    case rootBlockIsNotStart
+}
 
 struct BlocklyTranslator {
     let rootBlock: Block
 
-//    func translateToCode(<#parameters#>) -> <#return type#> {
-//        <#function body#>
-//    }
+    func translateToCode() throws -> Code {
+        if rootBlock.name != "Start" {
+            throw TranslatorError.rootBlockIsNotStart
+        }
+        let startMethod = Method.with {
+            $0.name = rootBlock.name
+            $0.instructions = []
+        }
+        let code = Code.with {
+            $0.methods = [startMethod]
+        }
+        return code
+    }
 }

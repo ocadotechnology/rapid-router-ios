@@ -167,6 +167,7 @@
 		1925A2C81F8EA288001CA1AD /* UnityViewControllerBase+iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1925A2BA1F8EA287001CA1AD /* UnityViewControllerBase+iOS.mm */; };
 		1925A2C91F8EA288001CA1AD /* Keyboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1925A2BE1F8EA288001CA1AD /* Keyboard.mm */; };
 		1925A2CA1F8EA288001CA1AD /* SplashScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1925A2BF1F8EA288001CA1AD /* SplashScreen.mm */; };
+		1925A2CC1F8EA65E001CA1AD /* BlocklyTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1925A2CB1F8EA65E001CA1AD /* BlocklyTranslatorTests.swift */; };
 		1A3D949F4A25A4C2BA596232CBA8DAE2 /* 102Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 587AB4F78E904EC85D1035643C9C526B /* 102Toolbox.xml */; };
 		1B1C6EE1348D4A287000DAD801AFCCCB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0BF3FE349716F65966814881E3EDF /* main.swift */; };
 		1ECCED2F42498B3667199F739B384EF4 /* code.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D3DB3C7306F06839EDBC3D82D35B3 /* code.pb.swift */; };
@@ -551,6 +552,7 @@
 		1925A2BD1F8EA287001CA1AD /* UnityAppController+ViewHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnityAppController+ViewHandling.h"; sourceTree = "<group>"; };
 		1925A2BE1F8EA288001CA1AD /* Keyboard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Keyboard.mm; sourceTree = "<group>"; };
 		1925A2BF1F8EA288001CA1AD /* SplashScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SplashScreen.mm; sourceTree = "<group>"; };
+		1925A2CB1F8EA65E001CA1AD /* BlocklyTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyTranslatorTests.swift; sourceTree = "<group>"; };
 		19A87FCA0426B6CE0E79C32C6F7CCA70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B1948D16C655E31D268B0E4E550798F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		1EB25DF891CA4BBE43A6DF69C9951876 /* 13Toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 13Toolbox.xml; sourceTree = "<group>"; };
@@ -1254,6 +1256,7 @@
 				BD8364ED3E583CCF3EAC8D01865652F8 /* LevelChangeReducerTests.swift */,
 				C226F318C68ED7AD3075E8E9F70AD73F /* LevelChooserViewControllerTests.swift */,
 				3AEC70577676E043F171E61BB3DC600F /* ViewControllerTests.swift */,
+				1925A2CB1F8EA65E001CA1AD /* BlocklyTranslatorTests.swift */,
 			);
 			path = "Rapid RouterTests";
 			sourceTree = "<group>";
@@ -1587,6 +1590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1925A2CC1F8EA65E001CA1AD /* BlocklyTranslatorTests.swift in Sources */,
 				5F2E021C817458105FC552A12E958A8E /* ViewControllerTests.swift in Sources */,
 				B873C364CCEF0DA84066B81BDB7F8FDA /* LevelChangeReducerTests.swift in Sources */,
 				FD68D1BF10C79819FFD4DC23F386A468 /* LevelChooserViewControllerTests.swift in Sources */,
