@@ -45,9 +45,8 @@ def addfiles (direc, current_group, main_target)
         if File.directory?(item)
             new_folder = File.basename(item)
             created_group = current_group.new_group(new_folder, path = new_folder)
-            # puts created_group
             addfiles("#{item}/*", created_group, main_target)
-        else 
+        else
           new_item = File.basename(item)
           if not (current_group.name == 'Native' and new_item.include? ".h")
           	i = current_group.new_file(new_item)
@@ -71,7 +70,7 @@ project.targets.each do |t|
   end
 end
 
-# get the Unity group in the project 
+# get the Unity group in the project
 unity_group = project['Unity']
 
 # remove Libraries and Classes groups if they already exist
@@ -96,8 +95,7 @@ addfiles('Rapid Router/RapidRouterUnityBuild/Classes/*', classes_group, target)
 libraries_group['libil2cpp'].remove_from_project()
 
 # Make the project file uuids deterministic
-project.predictabilize_uuids()
+# project.predictabilize_uuids()
 
 # Save the changes to the project file
 project.save(project_path)
-
