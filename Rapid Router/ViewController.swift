@@ -66,7 +66,16 @@ class ViewController: UIViewController, StoreSubscriber {
             print("something went wrong")
         }
 
-        loadToolbox(level: mainStore.state.level)
+        loadToolbox(level: store.state.level)
+
+        if let workspace = workBenchViewController.workspace {
+            do {
+            let startBlock = try blockFactory.makeBlock(name: "start")
+            try workspace.addBlockTree(startBlock)
+            } catch {
+                print("start block not created")
+            }
+        }
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)
@@ -88,10 +97,15 @@ class ViewController: UIViewController, StoreSubscriber {
 
 
     @IBAction func sendBlocksToUnity(_ sender: Any) {
-        let blocks = workBenchViewController.workspace?.topLevelBlocks().map { $0.name }
-
-        if blocks!.count > 0 {
-            UnitySendMessage("VanController", "BlocklyListener", blocks![0])
+        guard let rootBlock = self.workBenchViewController.workspace?.topLevelBlocks().first else {
+            return
+        }
+        do {
+            let translator = BlocklyTranslator(rootBlock: rootBlock)
+            let code = try translator.translateToCode()
+            store.dispatch(RunCode(code: code))
+        } catch {
+            print("Could not translate blocks to `Code`")
         }
     }
 

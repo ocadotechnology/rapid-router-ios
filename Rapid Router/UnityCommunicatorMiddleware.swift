@@ -11,8 +11,14 @@ import ReSwift
 let unityComunicatorMiddleware: Middleware<Any> = { dispatch, getState in
     return { next in
         return { action in
-            if let action = action as? ChangeLevel {
+            switch action {
+            case let action as ChangeLevel:
                 UnitySendMessage("ChapterController", "LevelChangeListener", String(action.level))
+            case let action as RunCode:
+                let string = try! action.code.jsonString()
+                UnitySendMessage("ChapterController", "Listen", string)
+            default:
+                break
             }
             return next(action)
         }
