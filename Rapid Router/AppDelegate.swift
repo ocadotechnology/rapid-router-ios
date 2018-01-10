@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.application = application
         currentUnityController = UnityAppController()
         currentUnityController!.application(application, didFinishLaunchingWithOptions: launchOptions)
-
-        startUnity()
-        stopUnity()
+//
+//        startUnity()
+//        stopUnity()
 
         return true
     }

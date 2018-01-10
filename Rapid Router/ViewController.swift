@@ -29,12 +29,13 @@ class ViewController: UIViewController, StoreSubscriber {
     
     @IBAction func startUnity(sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.startUnity()
 
         gameView.addSubview(unityView)
         unityView.snp.makeConstraints { make in
             make.edges.equalTo(gameView)
         }
+
+        appDelegate.startUnity()
 
     }
 
