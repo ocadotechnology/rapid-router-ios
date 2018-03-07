@@ -1,51 +1,39 @@
 # Contributor Development Guide
 
-## Prerequisites:
-1. Clone [RapidRouter iOS Project](https://github.com/ocadotechnology/rapid-router-ios)
-2. Clone [RapidRouter Unity Project](https://github.com/ocadotechnology/rapid-router-unity)
+## Installation
+
+### Prerequisites:
+- Xcode 9.2
+- Unity 2017.3.0f3
+
+1. Clone this project
+2. Download the latest [Rapid Router Unity build](https://github.com/ocadotechnology/rapid-router-unity/releases)
 3. Install [Carthage](https://github.com/Carthage/Carthage#installing-carthage)
+4. Install `xcodeproj` for the ruby scripts by running `gem install xcodeproj` in the terminal
 
-## Build Unity
-1. Switch to iOS platform
-2. Select Release for Xcode run type
-3. Click Development Build checkbox
-4. Choose Player Settings… -> Device
-    - Select Other Settings
-        - Change “Colour Space*” to “Gamma”
-        - Tick “Auto Graphics API”
-        - Change Target SDK from Device SDK to Simulator SDK
-        
-<br/>
+### Build Xcode Project
 
-![PlayerSettings](images/UnityPlayerSettings.png)
+> You will need a physical device to run the project. This is due to the Unity generated project only supporting ARM-based processors and the iOS simulator runs on the laptop/desktop's processor.
 
-5. Build project
-    - Select to save at root/RapidRouter of iOS project, with name RapidRouterUnityBuild
-    
-<br/>
+1. Make sure Xcode is closed and open up a terminal window and `cd` into the project
+2. Update and build any dependencies `carthage update --platform iOS`
+2. Create a folder called *RapidRouterUnityBuild* inside of the *Rapid Router* folder at the root of the project if it doesn't already exist
+3. Unzip the Unity build into the *Rapid Router* folder. You should end up with `Rapid Router/RapidRouterUnityBuild`
+4. Modify the Unity build by running: `ruby projectRefresh.rb`. This makes it possible for the [Unity release to run within another iOS app](https://medium.com/ocadotechnology/unity-and-blockly-a-match-almost-made-in-heaven-ff2eafcdd220)
+5. Delete Classes group, remove References
+6. Delete Libraries group, remove References
+7. Drag and drop the "Classes" folder inside *RapidRouterUnityBuild* into the Unity group in Xcode. (Select "Create groups" and add to the "Rapid Router" target only)
+8. Drag and drop the "Libraries" folder inside *RapidRouterUnityBuild* into the Unity group in Xcode. (Select "Create groups" and add to the "Rapid Router" target only. Don't copy the items)
+9. Add Classes from *RapidRouterUnityBuild* inside of the Unity group in Xcode
+10. Remove the Unity/Libraries/libl2cpp group in Xcode (click "Remove references" when prompted) 
+11. Remove the `*.h` header files from the Unity/Classes/Native group in Xcode
+12. Run the project on a physical device
 
-![UnityBuild](images/UnityiOSBuild.png)
+> If you want to update the Unity build, skip steps 1 and 2
 
-## Build Xcode Project
-1. Ensure Unity folder folder is properly linked to RapidRouter/RapidRouterUnityBuild
-2. Remove all .h files from Unity/Classes/Native
-3. Go to Unity/Classes/main.mm and rename the `main` method to `unity_main`
-4. Copy method from UnityBridge.h and replace the getAppController method in `UnityAppController.h`
-5. Open terminal at root of project and run `carthage update`
+> If you want to update the iOS dependencies,  run step 1 only
 
-6. Open rapid-router-ios/Carthage/Checkouts/blockly-ios/Blockly.xcodeproj
-- Select Manage Schemes
-    
-<br/>
+### Run Project
 
-![ManageBlocklySchemes](images/XcodeManageSchemes.png)
+Just open Xcode, make sure you have selected a **physical** device and press play!
 
-- Only BlocklyTests will have `Shared` enabled. Tick `Shared` for the Blockly framework as well and click `Done`
-    
-<br/>
-
-![ShareBlocklyFramework](images/ShareBlocklyFramework.png)
-    
-<br/>
-
-7. Finally, at the root of the iOS project, run `carthage build`
