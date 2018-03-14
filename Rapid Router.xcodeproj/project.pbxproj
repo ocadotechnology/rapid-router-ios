@@ -267,7 +267,6 @@
 		38B7ACD8B67023BD25BC22CF0FAD1170 /* 2Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0068A73FA845C55D3A56E4DF67236271 /* 2Toolbox.xml */; };
 		3C069356BE635842A17C0B08DFF6B1A0 /* 47Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = CF136A452A12D47E3E1185158D90A50C /* 47Toolbox.xml */; };
 		3D4E6AA713CBE3DA2E2A2743E9A5B8CC /* 72Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = E9A104C05EBFF46377C7C9542C975747 /* 72Toolbox.xml */; };
-		3FECD2E1AA93752715E1C30D6C710525 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		40989E36AD7488CD1029DFB9E2423F6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A5CAD991E324E74C47EC188779D7F2 /* CFNetwork.framework */; };
 		4318B95243DE78F62AEF18AF0F3E6AB4 /* 43Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = FD09B3A0469ACB639709A1CB6937DAEF /* 43Toolbox.xml */; };
 		47D882C213BAEF978F629EC5D90C151F /* 27Toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0DEF01E3BBBFD2365A03EDDE90DB6828 /* 27Toolbox.xml */; };
@@ -883,7 +882,6 @@
 				A1C72DD7B2EC8BC10909F98D2F3CA7B5 /* Blockly.framework in Frameworks */,
 				64885B744CA1B0A49F2ED4C2C7DA09B5 /* QuartzCore.framework in Frameworks */,
 				0128643EF65EB9C620C712DFE4274D61 /* SwiftProtobuf.framework in Frameworks */,
-				3FECD2E1AA93752715E1C30D6C710525 /* (null) in Frameworks */,
 				84A693A80D9A342F146EC9AE6E05F361 /* Foundation.framework in Frameworks */,
 				73E001AFDD4DD00078026E537D17764E /* SnapKit.framework in Frameworks */,
 				4DE37306CC01A43F556B62ABD6B1DA50 /* MediaPlayer.framework in Frameworks */,
@@ -898,7 +896,6 @@
 				F2F8A17B68C825DD438365B4B01D368A /* CoreVideo.framework in Frameworks */,
 				19C9425620506C35002066B1 /* libiPhone-lib.a in Frameworks */,
 				5DF715EB827AE45D2DDF6775A9504683 /* CoreMedia.framework in Frameworks */,
-				3FECD2E1AA93752715E1C30D6C710525 /* (null) in Frameworks */,
 				1087F01D79175B96C10D48F03562D1DD /* CoreMotion.framework in Frameworks */,
 				938D8885829A9BA4A8617AC8F6FD1DBA /* MediaToolbox.framework in Frameworks */,
 				006E71DCA0A76262637C2526DBF9290D /* AVFoundation.framework in Frameworks */,
@@ -2048,7 +2045,7 @@
 					"$(PROJECT_DIR)/Rapid\\ Router/RapidRouterUnityBuild/Libraries",
 					"$(PROJECT_DIR)/Rapid\\ Router/RapidRouterUnityBuild/Libraries",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ocado.Rapid-Router";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.niket.Rapid-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2078,7 +2075,7 @@
 					"$(PROJECT_DIR)/Rapid\\ Router/RapidRouterUnityBuild/Libraries",
 					"$(PROJECT_DIR)/Rapid\\ Router/RapidRouterUnityBuild/Libraries",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ocado.Rapid-Router";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.niket.Rapid-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

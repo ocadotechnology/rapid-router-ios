@@ -70,9 +70,6 @@ class ViewController: UIViewController, StoreSubscriber {
 
         addChildViewController(workBenchViewController)
         workbenchView.addSubview(workBenchViewController.view)
-        workBenchViewController.view.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
         workBenchViewController.didMove(toParentViewController: self)
     }
 

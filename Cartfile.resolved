@@ -1,5 +1,5 @@
 github "ReSwift/ReSwift" "4.0.1"
 github "SnapKit/SnapKit" "3.2.0"
-github "apple/swift-protobuf" "1.0.2"
+github "apple/swift-protobuf" "1.0.3"
 github "google/blockly-ios" "1.2.2"
 github "tadija/AEXML" "4.2.2"
